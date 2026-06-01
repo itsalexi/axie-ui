@@ -1,0 +1,31 @@
+{
+  "name": "@axie/docs",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "predev": "pnpm --workspace-root registry:build",
+    "dev": "next dev -p 8091",
+    "prebuild": "pnpm --workspace-root registry:build",
+    "build": "next build",
+    "start": "next start -p 8091",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "dependencies": {
+    "@axie/registry": "workspace:*",
+    "@axie/ui": "workspace:*",
+    "@radix-ui/react-icons": "latest",
+    "next": "latest",
+    "react": "latest",
+    "react-dom": "latest"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "latest",
+    "@types/node": "latest",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "postcss": "latest",
+    "tailwindcss": "latest",
+    "typescript": "latest"
+  }
+}

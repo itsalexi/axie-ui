@@ -1,0 +1,1281 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry.json",
+  "name": "axie",
+  "homepage": "http://localhost:8091",
+  "items": [
+    {
+      "name": "button",
+      "type": "registry:ui",
+      "title": "Button",
+      "description": "A tactile action primitive with solid, soft, outline, ghost, danger, and icon treatments.",
+      "categories": [
+        "Forms"
+      ],
+      "dependencies": [
+        "@radix-ui/react-slot"
+      ],
+      "files": [
+        {
+          "path": "packages/ui/src/components/button.tsx",
+          "target": "components/axie/button.tsx",
+          "type": "registry:ui"
+        },
+        {
+          "path": "packages/ui/src/lib/cn.ts",
+          "target": "lib/axie-cn.ts",
+          "type": "registry:lib"
+        },
+        {
+          "path": "packages/ui/src/styles.css",
+          "target": "styles/axie.css",
+          "type": "registry:style"
+        }
+      ],
+      "meta": {
+        "importName": "Button",
+        "tags": [
+          "action",
+          "submit",
+          "toolbar"
+        ]
+      }
+    },
+    {
+      "name": "input",
+      "type": "registry:ui",
+      "title": "Input",
+      "description": "A dense input primitive with Axie focus, disabled, placeholder, and invalid states.",
+      "categories": [
+        "Forms"
+      ],
+      "dependencies": [],
+      "files": [
+        {
+          "path": "packages/ui/src/components/input.tsx",
+          "target": "components/axie/input.tsx",
+          "type": "registry:ui"
+        },
+        {
+          "path": "packages/ui/src/lib/cn.ts",
+          "target": "lib/axie-cn.ts",
+          "type": "registry:lib"
+        },
+        {
+          "path": "packages/ui/src/styles.css",
+          "target": "styles/axie.css",
+          "type": "registry:style"
+        }
+      ],
+      "meta": {
+        "importName": "Input",
+        "tags": [
+          "text",
+          "form",
+          "validation"
+        ]
+      }
+    },
+    {
+      "name": "autocomplete",
+      "type": "registry:ui",
+      "title": "Autocomplete",
+      "description": "A combobox input for filtering and selecting from suggested options.",
+      "categories": [
+        "Forms"
+      ],
+      "dependencies": [],
+      "files": [
+        {
+          "path": "packages/ui/src/components/autocomplete.tsx",
+          "target": "components/axie/autocomplete.tsx",
+          "type": "registry:ui"
+        },
+        {
+          "path": "packages/ui/src/lib/cn.ts",
+          "target": "lib/axie-cn.ts",
+          "type": "registry:lib"
+        },
+        {
+          "path": "packages/ui/src/styles.css",
+          "target": "styles/axie.css",
+          "type": "registry:style"
+        }
+      ],
+      "meta": {
+        "importName": "Autocomplete",
+        "tags": [
+          "combobox",
+          "search",
+          "suggestions"
+        ]
+      }
+    },
+    {
+      "name": "input-otp",
+      "type": "registry:ui",
+      "title": "Input OTP",
+      "description": "A compact one-time code input with copy-paste support through a hidden native input.",
+      "categories": [
+        "Forms"
+      ],
+      "dependencies": [],
+      "files": [
+        {
+          "path": "packages/ui/src/components/input-otp.tsx",
+          "target": "components/axie/input-otp.tsx",
+          "type": "registry:ui"
+        },
+        {
+          "path": "packages/ui/src/lib/cn.ts",
+          "target": "lib/axie-cn.ts",
+          "type": "registry:lib"
+        },
+        {
+          "path": "packages/ui/src/styles.css",
+          "target": "styles/axie.css",
+          "type": "registry:style"
+        }
+      ],
+      "meta": {
+        "importName": "InputOtp",
+        "tags": [
+          "code",
+          "verification",
+          "auth"
+        ]
+      }
+    },
+    {
+      "name": "field",
+      "type": "registry:ui",
+      "title": "Field",
+      "description": "A form wrapper for labels, helper copy, error copy, inputs, and textareas.",
+      "categories": [
+        "Forms"
+      ],
+      "dependencies": [],
+      "files": [
+        {
+          "path": "packages/ui/src/components/field.tsx",
+          "target": "components/axie/field.tsx",
+          "type": "registry:ui"
+        },
+        {
+          "path": "packages/ui/src/lib/cn.ts",
+          "target": "lib/axie-cn.ts",
+          "type": "registry:lib"
+        },
+        {
+          "path": "packages/ui/src/styles.css",
+          "target": "styles/axie.css",
+          "type": "registry:style"
+        }
+      ],
+      "meta": {
+        "importName": "Field",
+        "tags": [
+          "label",
+          "helper",
+          "error"
+        ]
+      }
+    },
+    {
+      "name": "checkbox",
+      "type": "registry:ui",
+      "title": "Checkbox",
+      "description": "A native checkbox with Axie sizing, color, label, and description patterns.",
+      "categories": [
+        "Forms"
+      ],
+      "dependencies": [],
+      "files": [
+        {
+          "path": "packages/ui/src/components/checkbox.tsx",
+          "target": "components/axie/checkbox.tsx",
+          "type": "registry:ui"
+        },
+        {
+          "path": "packages/ui/src/lib/cn.ts",
+          "target": "lib/axie-cn.ts",
+          "type": "registry:lib"
+        },
+        {
+          "path": "packages/ui/src/styles.css",
+          "target": "styles/axie.css",
+          "type": "registry:style"
+        }
+      ],
+      "meta": {
+        "importName": "Checkbox",
+        "tags": [
+          "boolean",
+          "settings",
+          "selection"
+        ]
+      }
+    },
+    {
+      "name": "switch",
+      "type": "registry:ui",
+      "title": "Switch",
+      "description": "A compact native switch for binary settings and panel preferences.",
+      "categories": [
+        "Forms"
+      ],
+      "dependencies": [],
+      "files": [
+        {
+          "path": "packages/ui/src/components/switch.tsx",
+          "target": "components/axie/switch.tsx",
+          "type": "registry:ui"
+        },
+        {
+          "path": "packages/ui/src/lib/cn.ts",
+          "target": "lib/axie-cn.ts",
+          "type": "registry:lib"
+        },
+        {
+          "path": "packages/ui/src/styles.css",
+          "target": "styles/axie.css",
+          "type": "registry:style"
+        }
+      ],
+      "meta": {
+        "importName": "Switch",
+        "tags": [
+          "toggle",
+          "settings",
+          "boolean"
+        ]
+      }
+    },
+    {
+      "name": "segmented-control",
+      "type": "registry:ui",
+      "title": "Segmented Control",
+      "description": "A compact control for switching between a small set of mutually exclusive choices.",
+      "categories": [
+        "Forms"
+      ],
+      "dependencies": [],
+      "files": [
+        {
+          "path": "packages/ui/src/components/segmented-control.tsx",
+          "target": "components/axie/segmented-control.tsx",
+          "type": "registry:ui"
+        },
+        {
+          "path": "packages/ui/src/lib/cn.ts",
+          "target": "lib/axie-cn.ts",
+          "type": "registry:lib"
+        },
+        {
+          "path": "packages/ui/src/styles.css",
+          "target": "styles/axie.css",
+          "type": "registry:style"
+        }
+      ],
+      "meta": {
+        "importName": "SegmentedControl",
+        "tags": [
+          "choice",
+          "tabs",
+          "settings"
+        ]
+      }
+    },
+    {
+      "name": "tabs",
+      "type": "registry:ui",
+      "title": "Tabs",
+      "description": "A small tab primitive for previews, settings panels, and compact docs surfaces.",
+      "categories": [
+        "Navigation"
+      ],
+      "dependencies": [],
+      "files": [
+        {
+          "path": "packages/ui/src/components/tabs.tsx",
+          "target": "components/axie/tabs.tsx",
+          "type": "registry:ui"
+        },
+        {
+          "path": "packages/ui/src/lib/cn.ts",
+          "target": "lib/axie-cn.ts",
+          "type": "registry:lib"
+        },
+        {
+          "path": "packages/ui/src/styles.css",
+          "target": "styles/axie.css",
+          "type": "registry:style"
+        }
+      ],
+      "meta": {
+        "importName": "Tabs",
+        "tags": [
+          "navigation",
+          "panels",
+          "views"
+        ]
+      }
+    },
+    {
+      "name": "accordion",
+      "type": "registry:ui",
+      "title": "Accordion",
+      "description": "A disclosure primitive for progressive settings, FAQs, and compact help.",
+      "categories": [
+        "Data Display"
+      ],
+      "dependencies": [],
+      "files": [
+        {
+          "path": "packages/ui/src/components/accordion.tsx",
+          "target": "components/axie/accordion.tsx",
+          "type": "registry:ui"
+        },
+        {
+          "path": "packages/ui/src/lib/cn.ts",
+          "target": "lib/axie-cn.ts",
+          "type": "registry:lib"
+        },
+        {
+          "path": "packages/ui/src/styles.css",
+          "target": "styles/axie.css",
+          "type": "registry:style"
+        }
+      ],
+      "meta": {
+        "importName": "Accordion",
+        "tags": [
+          "disclosure",
+          "faq",
+          "details"
+        ]
+      }
+    },
+    {
+      "name": "command-menu",
+      "type": "registry:ui",
+      "title": "Command Menu",
+      "description": "A keyboard-friendly command palette for docs search, navigation, and app commands.",
+      "categories": [
+        "Navigation"
+      ],
+      "dependencies": [
+        "cmdk"
+      ],
+      "files": [
+        {
+          "path": "packages/ui/src/components/command-menu.tsx",
+          "target": "components/axie/command-menu.tsx",
+          "type": "registry:ui"
+        },
+        {
+          "path": "packages/ui/src/components/command.tsx",
+          "target": "components/axie/command.tsx",
+          "type": "registry:ui"
+        },
+        {
+          "path": "packages/ui/src/lib/cn.ts",
+          "target": "lib/axie-cn.ts",
+          "type": "registry:lib"
+        },
+        {
+          "path": "packages/ui/src/styles.css",
+          "target": "styles/axie.css",
+          "type": "registry:style"
+        }
+      ],
+      "meta": {
+        "importName": "CommandMenu",
+        "tags": [
+          "search",
+          "keyboard",
+          "navigation"
+        ]
+      }
+    },
+    {
+      "name": "dialog",
+      "type": "registry:ui",
+      "title": "Dialog",
+      "description": "A centered modal for confirmation and compact focused tasks.",
+      "categories": [
+        "Overlays"
+      ],
+      "dependencies": [],
+      "files": [
+        {
+          "path": "packages/ui/src/components/dialog.tsx",
+          "target": "components/axie/dialog.tsx",
+          "type": "registry:ui"
+        },
+        {
+          "path": "packages/ui/src/lib/cn.ts",
+          "target": "lib/axie-cn.ts",
+          "type": "registry:lib"
+        },
+        {
+          "path": "packages/ui/src/styles.css",
+          "target": "styles/axie.css",
+          "type": "registry:style"
+        }
+      ],
+      "meta": {
+        "importName": "Dialog",
+        "tags": [
+          "modal",
+          "confirm",
+          "overlay"
+        ]
+      }
+    },
+    {
+      "name": "select",
+      "type": "registry:ui",
+      "title": "Select",
+      "description": "A styled listbox select with Axie trigger, menu, option descriptions, and keyboard navigation.",
+      "categories": [
+        "Forms"
+      ],
+      "dependencies": [],
+      "files": [
+        {
+          "path": "packages/ui/src/components/select.tsx",
+          "target": "components/axie/select.tsx",
+          "type": "registry:ui"
+        },
+        {
+          "path": "packages/ui/src/lib/cn.ts",
+          "target": "lib/axie-cn.ts",
+          "type": "registry:lib"
+        },
+        {
+          "path": "packages/ui/src/styles.css",
+          "target": "styles/axie.css",
+          "type": "registry:style"
+        }
+      ],
+      "meta": {
+        "importName": "Select",
+        "tags": [
+          "choice",
+          "listbox",
+          "form"
+        ]
+      }
+    },
+    {
+      "name": "radio-group",
+      "type": "registry:ui",
+      "title": "Radio Group",
+      "description": "A radio group for settings where every option needs a short explanation.",
+      "categories": [
+        "Forms"
+      ],
+      "dependencies": [],
+      "files": [
+        {
+          "path": "packages/ui/src/components/radio-group.tsx",
+          "target": "components/axie/radio-group.tsx",
+          "type": "registry:ui"
+        },
+        {
+          "path": "packages/ui/src/lib/cn.ts",
+          "target": "lib/axie-cn.ts",
+          "type": "registry:lib"
+        },
+        {
+          "path": "packages/ui/src/styles.css",
+          "target": "styles/axie.css",
+          "type": "registry:style"
+        }
+      ],
+      "meta": {
+        "importName": "RadioGroup",
+        "tags": [
+          "choice",
+          "settings",
+          "form"
+        ]
+      }
+    },
+    {
+      "name": "card",
+      "type": "registry:ui",
+      "title": "Card",
+      "description": "Low-elevation containers for individual repeated items or genuine tool surfaces.",
+      "categories": [
+        "Data Display"
+      ],
+      "dependencies": [],
+      "files": [
+        {
+          "path": "packages/ui/src/components/card.tsx",
+          "target": "components/axie/card.tsx",
+          "type": "registry:ui"
+        },
+        {
+          "path": "packages/ui/src/lib/cn.ts",
+          "target": "lib/axie-cn.ts",
+          "type": "registry:lib"
+        },
+        {
+          "path": "packages/ui/src/styles.css",
+          "target": "styles/axie.css",
+          "type": "registry:style"
+        }
+      ],
+      "meta": {
+        "importName": "Card",
+        "tags": [
+          "surface",
+          "container",
+          "panel"
+        ]
+      }
+    },
+    {
+      "name": "alert",
+      "type": "registry:ui",
+      "title": "Alert",
+      "description": "Inline feedback for state changes, warnings, and validation summaries.",
+      "categories": [
+        "Feedback"
+      ],
+      "dependencies": [],
+      "files": [
+        {
+          "path": "packages/ui/src/components/alert.tsx",
+          "target": "components/axie/alert.tsx",
+          "type": "registry:ui"
+        },
+        {
+          "path": "packages/ui/src/lib/cn.ts",
+          "target": "lib/axie-cn.ts",
+          "type": "registry:lib"
+        },
+        {
+          "path": "packages/ui/src/styles.css",
+          "target": "styles/axie.css",
+          "type": "registry:style"
+        }
+      ],
+      "meta": {
+        "importName": "Alert",
+        "tags": [
+          "message",
+          "warning",
+          "status"
+        ]
+      }
+    },
+    {
+      "name": "badge",
+      "type": "registry:ui",
+      "title": "Badge",
+      "description": "Small semantic labels for status, categories, and compact metadata.",
+      "categories": [
+        "Feedback"
+      ],
+      "dependencies": [],
+      "files": [
+        {
+          "path": "packages/ui/src/components/badge.tsx",
+          "target": "components/axie/badge.tsx",
+          "type": "registry:ui"
+        },
+        {
+          "path": "packages/ui/src/lib/cn.ts",
+          "target": "lib/axie-cn.ts",
+          "type": "registry:lib"
+        },
+        {
+          "path": "packages/ui/src/styles.css",
+          "target": "styles/axie.css",
+          "type": "registry:style"
+        }
+      ],
+      "meta": {
+        "importName": "Badge",
+        "tags": [
+          "label",
+          "status",
+          "metadata"
+        ]
+      }
+    },
+    {
+      "name": "avatar",
+      "type": "registry:ui",
+      "title": "Avatar",
+      "description": "A rounded-square avatar with initials fallback and optional presence status.",
+      "categories": [
+        "Data Display"
+      ],
+      "dependencies": [],
+      "files": [
+        {
+          "path": "packages/ui/src/components/avatar.tsx",
+          "target": "components/axie/avatar.tsx",
+          "type": "registry:ui"
+        },
+        {
+          "path": "packages/ui/src/lib/cn.ts",
+          "target": "lib/axie-cn.ts",
+          "type": "registry:lib"
+        },
+        {
+          "path": "packages/ui/src/styles.css",
+          "target": "styles/axie.css",
+          "type": "registry:style"
+        }
+      ],
+      "meta": {
+        "importName": "Avatar",
+        "tags": [
+          "identity",
+          "presence",
+          "profile"
+        ]
+      }
+    },
+    {
+      "name": "breadcrumb",
+      "type": "registry:ui",
+      "title": "Breadcrumb",
+      "description": "A compact navigation trail for docs, settings, and nested app pages.",
+      "categories": [
+        "Navigation"
+      ],
+      "dependencies": [],
+      "files": [
+        {
+          "path": "packages/ui/src/components/breadcrumb.tsx",
+          "target": "components/axie/breadcrumb.tsx",
+          "type": "registry:ui"
+        },
+        {
+          "path": "packages/ui/src/lib/cn.ts",
+          "target": "lib/axie-cn.ts",
+          "type": "registry:lib"
+        },
+        {
+          "path": "packages/ui/src/styles.css",
+          "target": "styles/axie.css",
+          "type": "registry:style"
+        }
+      ],
+      "meta": {
+        "importName": "Breadcrumb",
+        "tags": [
+          "trail",
+          "navigation",
+          "hierarchy"
+        ]
+      }
+    },
+    {
+      "name": "popover",
+      "type": "registry:ui",
+      "title": "Popover",
+      "description": "A lightweight floating surface for compact actions and contextual details.",
+      "categories": [
+        "Overlays"
+      ],
+      "dependencies": [],
+      "files": [
+        {
+          "path": "packages/ui/src/components/popover.tsx",
+          "target": "components/axie/popover.tsx",
+          "type": "registry:ui"
+        },
+        {
+          "path": "packages/ui/src/lib/cn.ts",
+          "target": "lib/axie-cn.ts",
+          "type": "registry:lib"
+        },
+        {
+          "path": "packages/ui/src/styles.css",
+          "target": "styles/axie.css",
+          "type": "registry:style"
+        }
+      ],
+      "meta": {
+        "importName": "Popover",
+        "tags": [
+          "floating",
+          "menu",
+          "details"
+        ]
+      }
+    },
+    {
+      "name": "progress",
+      "type": "registry:ui",
+      "title": "Progress",
+      "description": "A stable progress bar for budget pace, onboarding, and background work.",
+      "categories": [
+        "Feedback"
+      ],
+      "dependencies": [],
+      "files": [
+        {
+          "path": "packages/ui/src/components/progress.tsx",
+          "target": "components/axie/progress.tsx",
+          "type": "registry:ui"
+        },
+        {
+          "path": "packages/ui/src/lib/cn.ts",
+          "target": "lib/axie-cn.ts",
+          "type": "registry:lib"
+        },
+        {
+          "path": "packages/ui/src/styles.css",
+          "target": "styles/axie.css",
+          "type": "registry:style"
+        }
+      ],
+      "meta": {
+        "importName": "Progress",
+        "tags": [
+          "loading",
+          "status",
+          "completion"
+        ]
+      }
+    },
+    {
+      "name": "slider",
+      "type": "registry:ui",
+      "title": "Slider",
+      "description": "A native range input for compact numeric preferences and settings.",
+      "categories": [
+        "Forms"
+      ],
+      "dependencies": [],
+      "files": [
+        {
+          "path": "packages/ui/src/components/slider.tsx",
+          "target": "components/axie/slider.tsx",
+          "type": "registry:ui"
+        },
+        {
+          "path": "packages/ui/src/lib/cn.ts",
+          "target": "lib/axie-cn.ts",
+          "type": "registry:lib"
+        },
+        {
+          "path": "packages/ui/src/styles.css",
+          "target": "styles/axie.css",
+          "type": "registry:style"
+        }
+      ],
+      "meta": {
+        "importName": "Slider",
+        "tags": [
+          "range",
+          "numeric",
+          "settings"
+        ]
+      }
+    },
+    {
+      "name": "pagination",
+      "type": "registry:ui",
+      "title": "Pagination",
+      "description": "A small pagination primitive for tables, ledgers, and search results.",
+      "categories": [
+        "Navigation"
+      ],
+      "dependencies": [],
+      "files": [
+        {
+          "path": "packages/ui/src/components/pagination.tsx",
+          "target": "components/axie/pagination.tsx",
+          "type": "registry:ui"
+        },
+        {
+          "path": "packages/ui/src/lib/cn.ts",
+          "target": "lib/axie-cn.ts",
+          "type": "registry:lib"
+        },
+        {
+          "path": "packages/ui/src/styles.css",
+          "target": "styles/axie.css",
+          "type": "registry:style"
+        }
+      ],
+      "meta": {
+        "importName": "Pagination",
+        "tags": [
+          "pages",
+          "table",
+          "results"
+        ]
+      }
+    },
+    {
+      "name": "stepper",
+      "type": "registry:ui",
+      "title": "Stepper",
+      "description": "A compact progress list for setup flows, review queues, and staged forms.",
+      "categories": [
+        "Data Display"
+      ],
+      "dependencies": [],
+      "files": [
+        {
+          "path": "packages/ui/src/components/stepper.tsx",
+          "target": "components/axie/stepper.tsx",
+          "type": "registry:ui"
+        },
+        {
+          "path": "packages/ui/src/lib/cn.ts",
+          "target": "lib/axie-cn.ts",
+          "type": "registry:lib"
+        },
+        {
+          "path": "packages/ui/src/styles.css",
+          "target": "styles/axie.css",
+          "type": "registry:style"
+        }
+      ],
+      "meta": {
+        "importName": "Stepper",
+        "tags": [
+          "progress",
+          "workflow",
+          "stages"
+        ]
+      }
+    },
+    {
+      "name": "table",
+      "type": "registry:ui",
+      "title": "Table",
+      "description": "Composable table pieces for compact API references, ledgers, and settings matrices.",
+      "categories": [
+        "Data Display"
+      ],
+      "dependencies": [],
+      "files": [
+        {
+          "path": "packages/ui/src/components/table.tsx",
+          "target": "components/axie/table.tsx",
+          "type": "registry:ui"
+        },
+        {
+          "path": "packages/ui/src/lib/cn.ts",
+          "target": "lib/axie-cn.ts",
+          "type": "registry:lib"
+        },
+        {
+          "path": "packages/ui/src/styles.css",
+          "target": "styles/axie.css",
+          "type": "registry:style"
+        }
+      ],
+      "meta": {
+        "importName": "Table",
+        "tags": [
+          "data",
+          "grid",
+          "api"
+        ]
+      }
+    },
+    {
+      "name": "list-row",
+      "type": "registry:ui",
+      "title": "List Row",
+      "description": "A dense row primitive for ledgers, settings lists, feeds, and command rows.",
+      "categories": [
+        "Data Display"
+      ],
+      "dependencies": [],
+      "files": [
+        {
+          "path": "packages/ui/src/components/list-row.tsx",
+          "target": "components/axie/list-row.tsx",
+          "type": "registry:ui"
+        },
+        {
+          "path": "packages/ui/src/lib/cn.ts",
+          "target": "lib/axie-cn.ts",
+          "type": "registry:lib"
+        },
+        {
+          "path": "packages/ui/src/styles.css",
+          "target": "styles/axie.css",
+          "type": "registry:style"
+        }
+      ],
+      "meta": {
+        "importName": "ListRow",
+        "tags": [
+          "list",
+          "feed",
+          "ledger"
+        ]
+      }
+    },
+    {
+      "name": "empty-state",
+      "type": "registry:ui",
+      "title": "Empty State",
+      "description": "A composed empty state with one visual signal and one clear action.",
+      "categories": [
+        "Feedback"
+      ],
+      "dependencies": [],
+      "files": [
+        {
+          "path": "packages/ui/src/components/empty-state.tsx",
+          "target": "components/axie/empty-state.tsx",
+          "type": "registry:ui"
+        },
+        {
+          "path": "packages/ui/src/lib/cn.ts",
+          "target": "lib/axie-cn.ts",
+          "type": "registry:lib"
+        },
+        {
+          "path": "packages/ui/src/styles.css",
+          "target": "styles/axie.css",
+          "type": "registry:style"
+        }
+      ],
+      "meta": {
+        "importName": "EmptyState",
+        "tags": [
+          "blank",
+          "onboarding",
+          "action"
+        ]
+      }
+    },
+    {
+      "name": "skeleton",
+      "type": "registry:ui",
+      "title": "Skeleton",
+      "description": "A layout-matching loading primitive with a subtle shimmer.",
+      "categories": [
+        "Feedback"
+      ],
+      "dependencies": [],
+      "files": [
+        {
+          "path": "packages/ui/src/components/skeleton.tsx",
+          "target": "components/axie/skeleton.tsx",
+          "type": "registry:ui"
+        },
+        {
+          "path": "packages/ui/src/lib/cn.ts",
+          "target": "lib/axie-cn.ts",
+          "type": "registry:lib"
+        },
+        {
+          "path": "packages/ui/src/styles.css",
+          "target": "styles/axie.css",
+          "type": "registry:style"
+        }
+      ],
+      "meta": {
+        "importName": "Skeleton",
+        "tags": [
+          "loading",
+          "placeholder",
+          "shimmer"
+        ]
+      }
+    },
+    {
+      "name": "kbd",
+      "type": "registry:ui",
+      "title": "Kbd",
+      "description": "A small keyboard hint primitive for command surfaces and docs.",
+      "categories": [
+        "Navigation"
+      ],
+      "dependencies": [],
+      "files": [
+        {
+          "path": "packages/ui/src/components/kbd.tsx",
+          "target": "components/axie/kbd.tsx",
+          "type": "registry:ui"
+        },
+        {
+          "path": "packages/ui/src/lib/cn.ts",
+          "target": "lib/axie-cn.ts",
+          "type": "registry:lib"
+        },
+        {
+          "path": "packages/ui/src/styles.css",
+          "target": "styles/axie.css",
+          "type": "registry:style"
+        }
+      ],
+      "meta": {
+        "importName": "Kbd",
+        "tags": [
+          "keyboard",
+          "shortcut",
+          "hint"
+        ]
+      }
+    },
+    {
+      "name": "mobile-dock",
+      "type": "registry:ui",
+      "title": "Mobile Dock",
+      "description": "A floating mobile navigation dock with a moving active indicator and raised center action.",
+      "categories": [
+        "Navigation"
+      ],
+      "dependencies": [],
+      "files": [
+        {
+          "path": "packages/ui/src/components/mobile-dock.tsx",
+          "target": "components/axie/mobile-dock.tsx",
+          "type": "registry:ui"
+        },
+        {
+          "path": "packages/ui/src/lib/cn.ts",
+          "target": "lib/axie-cn.ts",
+          "type": "registry:lib"
+        },
+        {
+          "path": "packages/ui/src/styles.css",
+          "target": "styles/axie.css",
+          "type": "registry:style"
+        }
+      ],
+      "meta": {
+        "importName": "MobileDock",
+        "tags": [
+          "mobile",
+          "navigation",
+          "dock"
+        ]
+      }
+    },
+    {
+      "name": "code-block",
+      "type": "registry:ui",
+      "title": "Code Block",
+      "description": "A reusable code shell with copy action, header label, and inline controls.",
+      "categories": [
+        "Data Display"
+      ],
+      "dependencies": [],
+      "files": [
+        {
+          "path": "packages/ui/src/components/code-block.tsx",
+          "target": "components/axie/code-block.tsx",
+          "type": "registry:ui"
+        },
+        {
+          "path": "packages/ui/src/lib/cn.ts",
+          "target": "lib/axie-cn.ts",
+          "type": "registry:lib"
+        },
+        {
+          "path": "packages/ui/src/styles.css",
+          "target": "styles/axie.css",
+          "type": "registry:style"
+        }
+      ],
+      "meta": {
+        "importName": "CodeBlock",
+        "tags": [
+          "code",
+          "copy",
+          "docs"
+        ]
+      }
+    },
+    {
+      "name": "bottom-sheet",
+      "type": "registry:ui",
+      "title": "Bottom Sheet",
+      "description": "A mobile-first modal surface for dense forms and focused decisions.",
+      "categories": [
+        "Overlays"
+      ],
+      "dependencies": [],
+      "files": [
+        {
+          "path": "packages/ui/src/components/bottom-sheet.tsx",
+          "target": "components/axie/bottom-sheet.tsx",
+          "type": "registry:ui"
+        },
+        {
+          "path": "packages/ui/src/lib/cn.ts",
+          "target": "lib/axie-cn.ts",
+          "type": "registry:lib"
+        },
+        {
+          "path": "packages/ui/src/styles.css",
+          "target": "styles/axie.css",
+          "type": "registry:style"
+        }
+      ],
+      "meta": {
+        "importName": "BottomSheet",
+        "tags": [
+          "mobile",
+          "modal",
+          "drawer"
+        ]
+      }
+    },
+    {
+      "name": "tooltip",
+      "type": "registry:ui",
+      "title": "Tooltip",
+      "description": "A lightweight tooltip for icon buttons and compact controls.",
+      "categories": [
+        "Overlays"
+      ],
+      "dependencies": [],
+      "files": [
+        {
+          "path": "packages/ui/src/components/tooltip.tsx",
+          "target": "components/axie/tooltip.tsx",
+          "type": "registry:ui"
+        },
+        {
+          "path": "packages/ui/src/lib/cn.ts",
+          "target": "lib/axie-cn.ts",
+          "type": "registry:lib"
+        },
+        {
+          "path": "packages/ui/src/styles.css",
+          "target": "styles/axie.css",
+          "type": "registry:style"
+        }
+      ],
+      "meta": {
+        "importName": "Tooltip",
+        "tags": [
+          "hint",
+          "hover",
+          "label"
+        ]
+      }
+    },
+    {
+      "name": "toast",
+      "type": "registry:ui",
+      "title": "Toast",
+      "description": "A compact notification surface for saved states, sync updates, and warnings.",
+      "categories": [
+        "Feedback"
+      ],
+      "dependencies": [],
+      "files": [
+        {
+          "path": "packages/ui/src/components/toast.tsx",
+          "target": "components/axie/toast.tsx",
+          "type": "registry:ui"
+        },
+        {
+          "path": "packages/ui/src/components/toast-provider.tsx",
+          "target": "components/axie/toast-provider.tsx",
+          "type": "registry:ui"
+        },
+        {
+          "path": "packages/ui/src/lib/cn.ts",
+          "target": "lib/axie-cn.ts",
+          "type": "registry:lib"
+        },
+        {
+          "path": "packages/ui/src/styles.css",
+          "target": "styles/axie.css",
+          "type": "registry:style"
+        }
+      ],
+      "meta": {
+        "importName": "Toast",
+        "tags": [
+          "notification",
+          "feedback",
+          "status"
+        ]
+      }
+    },
+    {
+      "name": "separator",
+      "type": "registry:ui",
+      "title": "Separator",
+      "description": "A simple separator for lists, panels, and docs layouts.",
+      "categories": [
+        "Data Display"
+      ],
+      "dependencies": [],
+      "files": [
+        {
+          "path": "packages/ui/src/components/separator.tsx",
+          "target": "components/axie/separator.tsx",
+          "type": "registry:ui"
+        },
+        {
+          "path": "packages/ui/src/lib/cn.ts",
+          "target": "lib/axie-cn.ts",
+          "type": "registry:lib"
+        },
+        {
+          "path": "packages/ui/src/styles.css",
+          "target": "styles/axie.css",
+          "type": "registry:style"
+        }
+      ],
+      "meta": {
+        "importName": "Separator",
+        "tags": [
+          "divider",
+          "layout",
+          "section"
+        ]
+      }
+    },
+    {
+      "name": "stat",
+      "type": "registry:ui",
+      "title": "Stat",
+      "description": "A stable readout for dashboards and compact summary bands.",
+      "categories": [
+        "Data Display"
+      ],
+      "dependencies": [],
+      "files": [
+        {
+          "path": "packages/ui/src/components/stat.tsx",
+          "target": "components/axie/stat.tsx",
+          "type": "registry:ui"
+        },
+        {
+          "path": "packages/ui/src/lib/cn.ts",
+          "target": "lib/axie-cn.ts",
+          "type": "registry:lib"
+        },
+        {
+          "path": "packages/ui/src/styles.css",
+          "target": "styles/axie.css",
+          "type": "registry:style"
+        }
+      ],
+      "meta": {
+        "importName": "Stat",
+        "tags": [
+          "metric",
+          "dashboard",
+          "summary"
+        ]
+      }
+    }
+  ]
+}

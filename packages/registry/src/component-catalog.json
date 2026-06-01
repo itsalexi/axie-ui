@@ -1,0 +1,470 @@
+[
+  {
+    "slug": "button",
+    "name": "Button",
+    "title": "Button",
+    "type": "registry:ui",
+    "description": "A tactile action primitive with solid, soft, outline, ghost, danger, and icon treatments.",
+    "category": "Forms",
+    "tags": [
+      "action",
+      "submit",
+      "toolbar"
+    ]
+  },
+  {
+    "slug": "input",
+    "name": "Input",
+    "title": "Input",
+    "type": "registry:ui",
+    "description": "A dense input primitive with Axie focus, disabled, placeholder, and invalid states.",
+    "category": "Forms",
+    "tags": [
+      "text",
+      "form",
+      "validation"
+    ]
+  },
+  {
+    "slug": "autocomplete",
+    "name": "Autocomplete",
+    "title": "Autocomplete",
+    "type": "registry:ui",
+    "description": "A combobox input for filtering and selecting from suggested options.",
+    "category": "Forms",
+    "tags": [
+      "combobox",
+      "search",
+      "suggestions"
+    ]
+  },
+  {
+    "slug": "input-otp",
+    "name": "Input OTP",
+    "title": "Input OTP",
+    "type": "registry:ui",
+    "description": "A compact one-time code input with copy-paste support through a hidden native input.",
+    "category": "Forms",
+    "tags": [
+      "code",
+      "verification",
+      "auth"
+    ]
+  },
+  {
+    "slug": "field",
+    "name": "Field",
+    "title": "Field",
+    "type": "registry:ui",
+    "description": "A form wrapper for labels, helper copy, error copy, inputs, and textareas.",
+    "category": "Forms",
+    "tags": [
+      "label",
+      "helper",
+      "error"
+    ]
+  },
+  {
+    "slug": "checkbox",
+    "name": "Checkbox",
+    "title": "Checkbox",
+    "type": "registry:ui",
+    "description": "A native checkbox with Axie sizing, color, label, and description patterns.",
+    "category": "Forms",
+    "tags": [
+      "boolean",
+      "settings",
+      "selection"
+    ]
+  },
+  {
+    "slug": "switch",
+    "name": "Switch",
+    "title": "Switch",
+    "type": "registry:ui",
+    "description": "A compact native switch for binary settings and panel preferences.",
+    "category": "Forms",
+    "tags": [
+      "toggle",
+      "settings",
+      "boolean"
+    ]
+  },
+  {
+    "slug": "segmented-control",
+    "name": "Segmented Control",
+    "title": "Segmented Control",
+    "type": "registry:ui",
+    "description": "A compact control for switching between a small set of mutually exclusive choices.",
+    "category": "Forms",
+    "tags": [
+      "choice",
+      "tabs",
+      "settings"
+    ]
+  },
+  {
+    "slug": "tabs",
+    "name": "Tabs",
+    "title": "Tabs",
+    "type": "registry:ui",
+    "description": "A small tab primitive for previews, settings panels, and compact docs surfaces.",
+    "category": "Navigation",
+    "tags": [
+      "navigation",
+      "panels",
+      "views"
+    ]
+  },
+  {
+    "slug": "accordion",
+    "name": "Accordion",
+    "title": "Accordion",
+    "type": "registry:ui",
+    "description": "A disclosure primitive for progressive settings, FAQs, and compact help.",
+    "category": "Data Display",
+    "tags": [
+      "disclosure",
+      "faq",
+      "details"
+    ]
+  },
+  {
+    "slug": "command-menu",
+    "name": "Command Menu",
+    "title": "Command Menu",
+    "type": "registry:ui",
+    "description": "A keyboard-friendly command palette for docs search, navigation, and app commands.",
+    "category": "Navigation",
+    "tags": [
+      "search",
+      "keyboard",
+      "navigation"
+    ]
+  },
+  {
+    "slug": "dialog",
+    "name": "Dialog",
+    "title": "Dialog",
+    "type": "registry:ui",
+    "description": "A centered modal for confirmation and compact focused tasks.",
+    "category": "Overlays",
+    "tags": [
+      "modal",
+      "confirm",
+      "overlay"
+    ]
+  },
+  {
+    "slug": "select",
+    "name": "Select",
+    "title": "Select",
+    "type": "registry:ui",
+    "description": "A styled listbox select with Axie trigger, menu, option descriptions, and keyboard navigation.",
+    "category": "Forms",
+    "tags": [
+      "choice",
+      "listbox",
+      "form"
+    ]
+  },
+  {
+    "slug": "radio-group",
+    "name": "Radio Group",
+    "title": "Radio Group",
+    "type": "registry:ui",
+    "description": "A radio group for settings where every option needs a short explanation.",
+    "category": "Forms",
+    "tags": [
+      "choice",
+      "settings",
+      "form"
+    ]
+  },
+  {
+    "slug": "card",
+    "name": "Card",
+    "title": "Card",
+    "type": "registry:ui",
+    "description": "Low-elevation containers for individual repeated items or genuine tool surfaces.",
+    "category": "Data Display",
+    "tags": [
+      "surface",
+      "container",
+      "panel"
+    ]
+  },
+  {
+    "slug": "alert",
+    "name": "Alert",
+    "title": "Alert",
+    "type": "registry:ui",
+    "description": "Inline feedback for state changes, warnings, and validation summaries.",
+    "category": "Feedback",
+    "tags": [
+      "message",
+      "warning",
+      "status"
+    ]
+  },
+  {
+    "slug": "badge",
+    "name": "Badge",
+    "title": "Badge",
+    "type": "registry:ui",
+    "description": "Small semantic labels for status, categories, and compact metadata.",
+    "category": "Feedback",
+    "tags": [
+      "label",
+      "status",
+      "metadata"
+    ]
+  },
+  {
+    "slug": "avatar",
+    "name": "Avatar",
+    "title": "Avatar",
+    "type": "registry:ui",
+    "description": "A rounded-square avatar with initials fallback and optional presence status.",
+    "category": "Data Display",
+    "tags": [
+      "identity",
+      "presence",
+      "profile"
+    ]
+  },
+  {
+    "slug": "breadcrumb",
+    "name": "Breadcrumb",
+    "title": "Breadcrumb",
+    "type": "registry:ui",
+    "description": "A compact navigation trail for docs, settings, and nested app pages.",
+    "category": "Navigation",
+    "tags": [
+      "trail",
+      "navigation",
+      "hierarchy"
+    ]
+  },
+  {
+    "slug": "popover",
+    "name": "Popover",
+    "title": "Popover",
+    "type": "registry:ui",
+    "description": "A lightweight floating surface for compact actions and contextual details.",
+    "category": "Overlays",
+    "tags": [
+      "floating",
+      "menu",
+      "details"
+    ]
+  },
+  {
+    "slug": "progress",
+    "name": "Progress",
+    "title": "Progress",
+    "type": "registry:ui",
+    "description": "A stable progress bar for budget pace, onboarding, and background work.",
+    "category": "Feedback",
+    "tags": [
+      "loading",
+      "status",
+      "completion"
+    ]
+  },
+  {
+    "slug": "slider",
+    "name": "Slider",
+    "title": "Slider",
+    "type": "registry:ui",
+    "description": "A native range input for compact numeric preferences and settings.",
+    "category": "Forms",
+    "tags": [
+      "range",
+      "numeric",
+      "settings"
+    ]
+  },
+  {
+    "slug": "pagination",
+    "name": "Pagination",
+    "title": "Pagination",
+    "type": "registry:ui",
+    "description": "A small pagination primitive for tables, ledgers, and search results.",
+    "category": "Navigation",
+    "tags": [
+      "pages",
+      "table",
+      "results"
+    ]
+  },
+  {
+    "slug": "stepper",
+    "name": "Stepper",
+    "title": "Stepper",
+    "type": "registry:ui",
+    "description": "A compact progress list for setup flows, review queues, and staged forms.",
+    "category": "Data Display",
+    "tags": [
+      "progress",
+      "workflow",
+      "stages"
+    ]
+  },
+  {
+    "slug": "table",
+    "name": "Table",
+    "title": "Table",
+    "type": "registry:ui",
+    "description": "Composable table pieces for compact API references, ledgers, and settings matrices.",
+    "category": "Data Display",
+    "tags": [
+      "data",
+      "grid",
+      "api"
+    ]
+  },
+  {
+    "slug": "list-row",
+    "name": "List Row",
+    "title": "List Row",
+    "type": "registry:ui",
+    "description": "A dense row primitive for ledgers, settings lists, feeds, and command rows.",
+    "category": "Data Display",
+    "tags": [
+      "list",
+      "feed",
+      "ledger"
+    ]
+  },
+  {
+    "slug": "empty-state",
+    "name": "Empty State",
+    "title": "Empty State",
+    "type": "registry:ui",
+    "description": "A composed empty state with one visual signal and one clear action.",
+    "category": "Feedback",
+    "tags": [
+      "blank",
+      "onboarding",
+      "action"
+    ]
+  },
+  {
+    "slug": "skeleton",
+    "name": "Skeleton",
+    "title": "Skeleton",
+    "type": "registry:ui",
+    "description": "A layout-matching loading primitive with a subtle shimmer.",
+    "category": "Feedback",
+    "tags": [
+      "loading",
+      "placeholder",
+      "shimmer"
+    ]
+  },
+  {
+    "slug": "kbd",
+    "name": "Kbd",
+    "title": "Kbd",
+    "type": "registry:ui",
+    "description": "A small keyboard hint primitive for command surfaces and docs.",
+    "category": "Navigation",
+    "tags": [
+      "keyboard",
+      "shortcut",
+      "hint"
+    ]
+  },
+  {
+    "slug": "mobile-dock",
+    "name": "Mobile Dock",
+    "title": "Mobile Dock",
+    "type": "registry:ui",
+    "description": "A floating mobile navigation dock with a moving active indicator and raised center action.",
+    "category": "Navigation",
+    "tags": [
+      "mobile",
+      "navigation",
+      "dock"
+    ]
+  },
+  {
+    "slug": "code-block",
+    "name": "Code Block",
+    "title": "Code Block",
+    "type": "registry:ui",
+    "description": "A reusable code shell with copy action, header label, and inline controls.",
+    "category": "Data Display",
+    "tags": [
+      "code",
+      "copy",
+      "docs"
+    ]
+  },
+  {
+    "slug": "bottom-sheet",
+    "name": "Bottom Sheet",
+    "title": "Bottom Sheet",
+    "type": "registry:ui",
+    "description": "A mobile-first modal surface for dense forms and focused decisions.",
+    "category": "Overlays",
+    "tags": [
+      "mobile",
+      "modal",
+      "drawer"
+    ]
+  },
+  {
+    "slug": "tooltip",
+    "name": "Tooltip",
+    "title": "Tooltip",
+    "type": "registry:ui",
+    "description": "A lightweight tooltip for icon buttons and compact controls.",
+    "category": "Overlays",
+    "tags": [
+      "hint",
+      "hover",
+      "label"
+    ]
+  },
+  {
+    "slug": "toast",
+    "name": "Toast",
+    "title": "Toast",
+    "type": "registry:ui",
+    "description": "A compact notification surface for saved states, sync updates, and warnings.",
+    "category": "Feedback",
+    "tags": [
+      "notification",
+      "feedback",
+      "status"
+    ]
+  },
+  {
+    "slug": "separator",
+    "name": "Separator",
+    "title": "Separator",
+    "type": "registry:ui",
+    "description": "A simple separator for lists, panels, and docs layouts.",
+    "category": "Data Display",
+    "tags": [
+      "divider",
+      "layout",
+      "section"
+    ]
+  },
+  {
+    "slug": "stat",
+    "name": "Stat",
+    "title": "Stat",
+    "type": "registry:ui",
+    "description": "A stable readout for dashboards and compact summary bands.",
+    "category": "Data Display",
+    "tags": [
+      "metric",
+      "dashboard",
+      "summary"
+    ]
+  }
+]

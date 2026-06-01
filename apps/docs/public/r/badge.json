@@ -1,0 +1,39 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "badge",
+  "title": "Badge",
+  "description": "Small semantic labels for status, categories, and compact metadata.",
+  "dependencies": [],
+  "files": [
+    {
+      "path": "packages/ui/src/components/badge.tsx",
+      "content": "import * as React from \"react\";\nimport { cn } from \"../lib/cn\";\n\nexport type BadgeTone = \"neutral\" | \"accent\" | \"danger\" | \"warning\" | \"info\";\n\nexport type BadgeProps = React.HTMLAttributes<HTMLSpanElement> & {\n  tone?: BadgeTone;\n};\n\nconst badgeTones: Record<BadgeTone, string> = {\n  neutral: \"bg-axie-surface-soft text-axie-muted\",\n  accent: \"bg-axie-accent-soft text-axie-accent\",\n  danger: \"bg-axie-danger-soft text-axie-danger\",\n  warning: \"bg-axie-warning-soft text-axie-warning\",\n  info: \"bg-axie-info-soft text-axie-info\"\n};\n\nexport function Badge({ className, tone = \"neutral\", ...props }: BadgeProps) {\n  return (\n    <span\n      className={cn(\n        \"inline-flex min-h-7 items-center rounded-axie-pill px-2.5 text-[11px] font-black uppercase leading-none tracking-normal transition duration-300 ease-[var(--axie-motion-spring)] hover:-translate-y-0.5\",\n        badgeTones[tone],\n        className\n      )}\n      {...props}\n    />\n  );\n}\n",
+      "type": "registry:ui",
+      "target": "components/axie/badge.tsx"
+    },
+    {
+      "path": "packages/ui/src/lib/cn.ts",
+      "content": "type ClassValue = string | false | null | undefined;\n\nexport function cn(...values: ClassValue[]) {\n  return values.filter(Boolean).join(\" \");\n}\n",
+      "type": "registry:lib",
+      "target": "lib/axie-cn.ts"
+    },
+    {
+      "path": "packages/ui/src/styles.css",
+      "content": "@theme inline {\n  --color-axie-ink: var(--axie-color-ink);\n  --color-axie-paper: var(--axie-color-paper);\n  --color-axie-surface: var(--axie-color-surface);\n  --color-axie-surface-soft: var(--axie-color-surface-soft);\n  --color-axie-muted: var(--axie-color-muted);\n  --color-axie-line: var(--axie-color-line);\n  --color-axie-accent: var(--axie-color-accent);\n  --color-axie-accent-soft: var(--axie-color-accent-soft);\n  --color-axie-danger: var(--axie-color-danger);\n  --color-axie-danger-soft: var(--axie-color-danger-soft);\n  --color-axie-warning: var(--axie-color-warning);\n  --color-axie-warning-soft: var(--axie-color-warning-soft);\n  --color-axie-info: var(--axie-color-info);\n  --color-axie-info-soft: var(--axie-color-info-soft);\n  --radius-axie-card: var(--axie-radius-card);\n  --radius-axie-control: var(--axie-radius-control);\n  --radius-axie-sheet: var(--axie-radius-sheet);\n  --radius-axie-pill: var(--axie-radius-pill);\n  --spacing-axie-page: var(--axie-space-page);\n  --spacing-axie-xs: var(--axie-space-xs);\n  --spacing-axie-sm: var(--axie-space-sm);\n  --spacing-axie-md: var(--axie-space-md);\n  --spacing-axie-lg: var(--axie-space-lg);\n  --spacing-axie-xl: var(--axie-space-xl);\n  --spacing-axie-2xl: var(--axie-space-2xl);\n  --shadow-axie-raised: 0 16px 36px color-mix(in srgb, var(--axie-color-ink) 10%, transparent);\n  --shadow-axie-soft: 0 10px 24px color-mix(in srgb, var(--axie-color-ink) 6%, transparent);\n  --shadow-axie-nav: 0 16px 38px color-mix(in srgb, var(--axie-color-ink) 12%, transparent);\n}\n\n:root {\n  --axie-color-ink: #28231f;\n  --axie-color-paper: #f7f2ea;\n  --axie-color-surface: #fffdf7;\n  --axie-color-surface-soft: #eee6d9;\n  --axie-color-muted: #766d62;\n  --axie-color-line: #ddd0be;\n  --axie-color-accent: #3f665c;\n  --axie-color-accent-soft: #dde9e3;\n  --axie-color-danger: #a44f43;\n  --axie-color-danger-soft: #f0d8d2;\n  --axie-color-warning: #967032;\n  --axie-color-warning-soft: #eedfc2;\n  --axie-color-info: #4f6a7f;\n  --axie-color-info-soft: #dde7ed;\n  --axie-radius-card: 10px;\n  --axie-radius-control: 12px;\n  --axie-radius-sheet: 30px;\n  --axie-radius-pill: 999px;\n  --axie-space-page: 20px;\n  --axie-space-xs: 6px;\n  --axie-space-sm: 10px;\n  --axie-space-md: 14px;\n  --axie-space-lg: 20px;\n  --axie-space-xl: 28px;\n  --axie-space-2xl: 36px;\n  --axie-motion-fast: 160ms;\n  --axie-motion-base: 240ms;\n  --axie-motion-slow: 360ms;\n  --axie-motion-ease: cubic-bezier(0.2, 0.9, 0.2, 1);\n  --axie-motion-spring: cubic-bezier(0.16, 1, 0.3, 1);\n  --axie-motion-pop: cubic-bezier(0.18, 1.24, 0.3, 1);\n}\n\n.axie-pressable {\n  transform: translate3d(0, 0, 0) scale(1);\n  transition-duration: var(--axie-motion-base);\n  transition-property: background-color, border-color, box-shadow, color, opacity, transform;\n  transition-timing-function: var(--axie-motion-spring);\n  will-change: transform;\n}\n\n.axie-pressable:hover {\n  transform: translate3d(0, -1px, 0) scale(1.005);\n}\n\n.axie-pressable:active {\n  transform: translate3d(0, 0, 0) scale(0.985);\n}\n\n.axie-enter {\n  animation: axie-enter var(--axie-motion-slow) var(--axie-motion-spring) both;\n}\n\n.axie-pop {\n  animation: axie-pop var(--axie-motion-slow) var(--axie-motion-pop) both;\n}\n\n.axie-fade {\n  animation: axie-fade var(--axie-motion-base) ease-out both;\n}\n\n.axie-sheet-backdrop {\n  animation: axie-fade var(--axie-motion-fast) ease-out both;\n}\n\n.axie-sheet-panel {\n  animation: axie-sheet-panel-in var(--axie-motion-slow) var(--axie-motion-ease) both;\n}\n\n.axie-row-enter {\n  animation: axie-row-in var(--axie-motion-base) var(--axie-motion-ease) both;\n  animation-delay: var(--axie-row-delay, 0ms);\n}\n\n@keyframes axie-fade {\n  from {\n    opacity: 0;\n  }\n  to {\n    opacity: 1;\n  }\n}\n\n@keyframes axie-enter {\n  from {\n    opacity: 0;\n    transform: translate3d(0, 10px, 0) scale(0.985);\n  }\n  to {\n    opacity: 1;\n    transform: translate3d(0, 0, 0) scale(1);\n  }\n}\n\n@keyframes axie-pop {\n  from {\n    opacity: 0;\n    transform: translate3d(0, 12px, 0) scale(0.96);\n  }\n  to {\n    opacity: 1;\n    transform: translate3d(0, 0, 0) scale(1);\n  }\n}\n\n@keyframes axie-sheet-panel-in {\n  from {\n    opacity: 0.72;\n    transform: translate3d(0, 26px, 0) scale(0.985);\n  }\n  to {\n    opacity: 1;\n    transform: translate3d(0, 0, 0) scale(1);\n  }\n}\n\n@keyframes axie-row-in {\n  from {\n    opacity: 0;\n    transform: translate3d(0, 8px, 0);\n  }\n  to {\n    opacity: 1;\n    transform: translate3d(0, 0, 0);\n  }\n}\n\n@keyframes axie-accordion-down {\n  from {\n    opacity: 0;\n    transform: translate3d(0, -4px, 0);\n  }\n  to {\n    opacity: 1;\n    transform: translate3d(0, 0, 0);\n  }\n}\n\n@keyframes axie-shimmer {\n  100% {\n    transform: translateX(100%);\n  }\n}\n\n@keyframes axie-pulse-dot {\n  0%,\n  100% {\n    box-shadow: 0 0 0 0 color-mix(in srgb, var(--axie-color-accent) 30%, transparent);\n  }\n  50% {\n    box-shadow: 0 0 0 5px color-mix(in srgb, var(--axie-color-accent) 0%, transparent);\n  }\n}\n\n@media (prefers-reduced-motion: reduce) {\n  *,\n  *::before,\n  *::after {\n    animation-duration: 0.001ms !important;\n    animation-iteration-count: 1 !important;\n    scroll-behavior: auto !important;\n    transition-duration: 0.001ms !important;\n  }\n\n  .axie-enter,\n  .axie-pop,\n  .axie-fade,\n  .axie-sheet-backdrop,\n  .axie-sheet-panel,\n  .axie-row-enter {\n    animation: none;\n  }\n\n  .axie-pressable,\n  .axie-pressable:hover,\n  .axie-pressable:active {\n    transform: none;\n  }\n}\n",
+      "type": "registry:style",
+      "target": "styles/axie.css"
+    }
+  ],
+  "meta": {
+    "importName": "Badge",
+    "tags": [
+      "label",
+      "status",
+      "metadata"
+    ]
+  },
+  "categories": [
+    "Feedback"
+  ],
+  "type": "registry:ui"
+}
