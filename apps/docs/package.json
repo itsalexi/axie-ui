@@ -4,9 +4,9 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "predev": "pnpm --workspace-root registry:build",
+    "predev": "pnpm --filter axie-ui build && pnpm --workspace-root registry:build",
     "dev": "next dev -p 8091",
-    "prebuild": "pnpm --workspace-root registry:build",
+    "prebuild": "pnpm --filter axie-ui build && pnpm --workspace-root registry:build",
     "build": "next build",
     "start": "next start -p 8091",
     "typecheck": "next typegen && tsc -p tsconfig.json --noEmit"
