@@ -104,6 +104,125 @@
   animation-delay: var(--axie-row-delay, 0ms);
 }
 
+.axie-slider {
+  --axie-slider-fill: 0%;
+  -webkit-appearance: none;
+  appearance: none;
+  block-size: 32px;
+  inline-size: 100%;
+  margin: 0;
+  background: transparent;
+  color: var(--axie-color-accent);
+  cursor: pointer;
+}
+
+.axie-slider:disabled {
+  cursor: not-allowed;
+  opacity: 0.56;
+}
+
+.axie-slider::-webkit-slider-runnable-track {
+  block-size: 12px;
+  border: 1px solid color-mix(in srgb, var(--axie-color-line) 88%, var(--axie-color-ink));
+  border-radius: var(--axie-radius-pill);
+  background:
+    linear-gradient(
+      to right,
+      var(--axie-color-accent) 0 var(--axie-slider-fill),
+      color-mix(in srgb, var(--axie-color-surface-soft) 84%, var(--axie-color-paper)) var(--axie-slider-fill) 100%
+    );
+  box-shadow: inset 0 1px 0 color-mix(in srgb, var(--axie-color-surface) 74%, transparent);
+  transition:
+    background var(--axie-motion-base) var(--axie-motion-spring),
+    border-color var(--axie-motion-base) var(--axie-motion-spring);
+}
+
+.axie-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  block-size: 22px;
+  inline-size: 22px;
+  margin-block-start: -6px;
+  border: 2px solid var(--axie-color-surface);
+  border-radius: 50%;
+  background:
+    radial-gradient(
+      circle at 34% 32%,
+      color-mix(in srgb, var(--axie-color-accent-soft) 62%, white) 0 22%,
+      var(--axie-color-accent) 58%
+    );
+  box-shadow:
+    0 2px 0 color-mix(in srgb, var(--axie-color-ink) 16%, transparent),
+    0 10px 20px color-mix(in srgb, var(--axie-color-accent) 22%, transparent);
+  transition:
+    box-shadow var(--axie-motion-base) var(--axie-motion-spring),
+    transform var(--axie-motion-base) var(--axie-motion-spring);
+}
+
+.axie-slider:hover::-webkit-slider-thumb {
+  transform: scale(1.05);
+}
+
+.axie-slider:active::-webkit-slider-thumb {
+  transform: scale(0.94);
+}
+
+.axie-slider:focus-visible::-webkit-slider-thumb {
+  box-shadow:
+    0 2px 0 color-mix(in srgb, var(--axie-color-ink) 16%, transparent),
+    0 10px 20px color-mix(in srgb, var(--axie-color-accent) 22%, transparent),
+    0 0 0 5px color-mix(in srgb, var(--axie-color-accent) 22%, transparent);
+}
+
+.axie-slider::-moz-range-track {
+  block-size: 12px;
+  border: 1px solid color-mix(in srgb, var(--axie-color-line) 88%, var(--axie-color-ink));
+  border-radius: var(--axie-radius-pill);
+  background: color-mix(in srgb, var(--axie-color-surface-soft) 84%, var(--axie-color-paper));
+  box-shadow: inset 0 1px 0 color-mix(in srgb, var(--axie-color-surface) 74%, transparent);
+}
+
+.axie-slider::-moz-range-progress {
+  block-size: 12px;
+  border-radius: var(--axie-radius-pill);
+  background: var(--axie-color-accent);
+}
+
+.axie-slider::-moz-range-thumb {
+  box-sizing: border-box;
+  block-size: 22px;
+  inline-size: 22px;
+  border: 2px solid var(--axie-color-surface);
+  border-radius: 50%;
+  background:
+    radial-gradient(
+      circle at 34% 32%,
+      color-mix(in srgb, var(--axie-color-accent-soft) 62%, white) 0 22%,
+      var(--axie-color-accent) 58%
+    );
+  box-shadow:
+    0 2px 0 color-mix(in srgb, var(--axie-color-ink) 16%, transparent),
+    0 10px 20px color-mix(in srgb, var(--axie-color-accent) 22%, transparent);
+  transition:
+    box-shadow var(--axie-motion-base) var(--axie-motion-spring),
+    transform var(--axie-motion-base) var(--axie-motion-spring);
+}
+
+.axie-slider:hover::-moz-range-thumb {
+  transform: scale(1.05);
+}
+
+.axie-slider:active::-moz-range-thumb {
+  transform: scale(0.94);
+}
+
+.axie-slider:focus-visible::-moz-range-thumb {
+  box-shadow:
+    0 2px 0 color-mix(in srgb, var(--axie-color-ink) 16%, transparent),
+    0 10px 20px color-mix(in srgb, var(--axie-color-accent) 22%, transparent),
+    0 0 0 5px color-mix(in srgb, var(--axie-color-accent) 22%, transparent);
+}
+
 @keyframes axie-fade {
   from {
     opacity: 0;

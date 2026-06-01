@@ -7,23 +7,54 @@ export type SliderProps = Omit<React.InputHTMLAttributes<HTMLInputElement>, "typ
 };
 
 export const Slider = React.forwardRef<HTMLInputElement, SliderProps>(
-  ({ className, defaultValue, label, min = 0, onChange, value, valueLabel, ...props }, ref) => {
+  (
+    {
+      className,
+      defaultValue,
+      label,
+      max = 100,
+      min = 0,
+      onChange,
+      style,
+      value,
+      valueLabel,
+      ...props
+    },
+    ref
+  ) => {
     const [localValue, setLocalValue] = React.useState(() =>
       String(value ?? defaultValue ?? min)
     );
     const currentValue = String(value ?? localValue);
+    const minNumber = Number(min);
+    const maxNumber = Number(max);
+    const valueNumber = Number(currentValue);
+    const fillPercent =
+      Number.isFinite(minNumber) &&
+      Number.isFinite(maxNumber) &&
+      Number.isFinite(valueNumber) &&
+      maxNumber > minNumber
+        ? Math.min(100, Math.max(0, ((valueNumber - minNumber) / (maxNumber - minNumber)) * 100))
+        : 0;
     const renderedValueLabel =
       typeof valueLabel === "function" ? valueLabel(currentValue) : valueLabel;
 
     const control = (
       <input
         className={cn(
-          "h-8 w-full cursor-pointer accent-axie-accent outline-none transition duration-300 ease-[var(--axie-motion-spring)] focus-visible:ring-2 focus-visible:ring-axie-accent/28 disabled:cursor-not-allowed disabled:opacity-50",
+          "axie-slider outline-none transition duration-300 ease-[var(--axie-motion-spring)]",
           className
         )}
         defaultValue={defaultValue}
+        max={max}
         min={min}
         ref={ref}
+        style={
+          {
+            ...style,
+            "--axie-slider-fill": `${fillPercent}%`
+          } as React.CSSProperties
+        }
         type="range"
         value={value}
         onChange={(event) => {
