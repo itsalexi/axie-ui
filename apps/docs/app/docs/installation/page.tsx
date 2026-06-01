@@ -6,9 +6,10 @@ export default function InstallationPage() {
   return (
     <DocsShell
       toc={[
-        { href: "#installation", label: "Installation" },
-        { href: "#tailwind", label: "Tailwind" },
-        { href: "#package-imports", label: "Package imports" }
+        { href: "#choose", label: "Choose a path" },
+        { href: "#package", label: "Package" },
+        { href: "#registry", label: "Registry" },
+        { href: "#styles", label: "Styles" }
       ]}
     >
       <article className="grid gap-10">
@@ -25,38 +26,79 @@ export default function InstallationPage() {
               Installation
             </h1>
             <p className="m-0 max-w-[66ch] text-[16px] font-bold leading-7 text-axie-muted">
-              Axie UI is source-first in this workspace. Import the CSS once and use package
-              imports for components.
+              Axie supports two install paths. Use the package when you want a normal dependency.
+              Use the registry when you want shadcn-style source copied into your app.
             </p>
           </div>
         </header>
 
         <DocsSection
-          description="Install the package in your app workspace."
-          id="installation"
-          title="Installation"
+          description="Do not use both paths by default. Pick the one that matches how much ownership you want over the component source."
+          id="choose"
+          title="Choose a path"
         >
-          <CodeBlock>{`pnpm add @axie/ui`}</CodeBlock>
+          <div className="grid overflow-hidden rounded-[16px] border border-axie-line bg-axie-surface md:grid-cols-2">
+            <div className="grid gap-3 border-b border-axie-line p-4 md:border-b-0 md:border-r">
+              <Badge className="w-fit" tone="accent">Package</Badge>
+              <h2 className="m-0 text-[20px] font-black leading-none text-axie-ink">
+                Install `@axie/ui`
+              </h2>
+              <p className="m-0 text-[14px] font-bold leading-6 text-axie-muted">
+                Best when you want updates through npm and package imports from one stable API.
+              </p>
+            </div>
+            <div className="grid gap-3 p-4">
+              <Badge className="w-fit">Registry</Badge>
+              <h2 className="m-0 text-[20px] font-black leading-none text-axie-ink">
+                Copy source with shadcn
+              </h2>
+              <p className="m-0 text-[14px] font-bold leading-6 text-axie-muted">
+                Best when you want the component files inside your app and plan to customize them.
+              </p>
+            </div>
+          </div>
         </DocsSection>
 
         <DocsSection
-          description="Tailwind v4 apps should import Tailwind, import Axie styles, and scan package source while developing in a monorepo."
-          id="tailwind"
-          title="Tailwind"
+          description="This installs Axie as a dependency. Components stay in node_modules and you import them from @axie/ui."
+          id="package"
+          title="Package install"
         >
-          <CodeBlock>{`@import "tailwindcss";
-@import "@axie/ui/styles.css";
-
-@source "../../../packages/ui/src";`}</CodeBlock>
-        </DocsSection>
-
-        <DocsSection
-          description="Import primitives directly from the package entrypoint."
-          id="package-imports"
-          title="Package imports"
-        >
-          <CodeBlock>{`import "@axie/ui/styles.css";
+          <div className="grid gap-4">
+            <CodeBlock>{`pnpm add @axie/ui
+npm install @axie/ui
+yarn add @axie/ui
+bun add @axie/ui`}</CodeBlock>
+            <CodeBlock>{`import "@axie/ui/styles.css";
 import { Button, Field, Input } from "@axie/ui";`}</CodeBlock>
+          </div>
+        </DocsSection>
+
+        <DocsSection
+          description="This does not install @axie/ui. shadcn downloads the registry item, writes the component files into your app, and installs only the external dependencies that component needs."
+          id="registry"
+          title="Registry install"
+        >
+          <div className="grid gap-4">
+            <CodeBlock>{`pnpm dlx shadcn@latest registry add @axie=https://axie.alexi.life/r/{name}.json
+pnpm dlx shadcn@latest add @axie/button`}</CodeBlock>
+            <CodeBlock>{`# Or install one component directly.
+pnpm dlx shadcn@latest add https://axie.alexi.life/r/button.json`}</CodeBlock>
+            <CodeBlock>{`import "@/styles/axie.css";
+import { Button } from "@/components/axie/button";`}</CodeBlock>
+          </div>
+        </DocsSection>
+
+        <DocsSection
+          description="Either path needs Axie styles imported once near the app root. Package installs import from @axie/ui. Registry installs import the copied stylesheet."
+          id="styles"
+          title="Styles"
+        >
+          <CodeBlock>{`/* Package install */
+import "@axie/ui/styles.css";
+
+/* Registry install */
+import "@/styles/axie.css";`}</CodeBlock>
         </DocsSection>
       </article>
     </DocsShell>

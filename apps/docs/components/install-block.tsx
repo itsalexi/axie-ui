@@ -28,10 +28,16 @@ function registryCommands(registryUrl: string): PackageManagerCommands {
 export function InstallBlock({ component }: { component: ComponentCatalogItem }) {
   const [manager, setManager] = useState<PackageManager>("pnpm");
   const importName = getComponentImportName(component);
-  const registryUrl = `http://localhost:8091/r/${component.slug}`;
+  const registryUrl = `https://axie.alexi.life/r/${component.slug}.json`;
 
   return (
     <div className="grid gap-5">
+      <div className="grid gap-1">
+        <p className="m-0 text-[14px] font-black text-axie-ink">Package install</p>
+        <p className="m-0 text-[13px] font-bold leading-5 text-axie-muted">
+          Install the package when you want components imported from @axie/ui.
+        </p>
+      </div>
       <PackageManagerCodeBlock
         commands={packageCommands}
         label="install"
@@ -45,12 +51,24 @@ export function InstallBlock({ component }: { component: ComponentCatalogItem })
 import { ${importName} } from "@axie/ui";`}</CodeBlock>
       </div>
 
+      <div className="grid gap-1 border-t border-axie-line pt-5">
+        <p className="m-0 text-[14px] font-black text-axie-ink">Registry install</p>
+        <p className="m-0 text-[13px] font-bold leading-5 text-axie-muted">
+          Use this instead when you want shadcn to copy editable source into your app. This does not install @axie/ui.
+        </p>
+      </div>
       <PackageManagerCodeBlock
         commands={registryCommands(registryUrl)}
         label="registry"
         manager={manager}
         onManagerChange={setManager}
       />
+
+      <div className="grid gap-2">
+        <p className="m-0 text-[12px] font-black uppercase leading-none text-axie-muted">Copied source import</p>
+        <CodeBlock>{`import "@/styles/axie.css";
+import { ${importName} } from "@/components/axie/${component.slug}";`}</CodeBlock>
+      </div>
     </div>
   );
 }
