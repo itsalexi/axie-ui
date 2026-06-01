@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { type ComponentCatalogItem, getComponentImportName } from "@axie/registry";
-import { CodeBlock } from "./docs-ui";
+import { CodeBlock, InlineCode } from "./docs-ui";
 import {
   PackageManagerCodeBlock,
   type PackageManager,
@@ -54,7 +54,7 @@ import { ${importName} } from "@axie/ui";`}</CodeBlock>
       <div className="grid gap-1 border-t border-axie-line pt-5">
         <p className="m-0 text-[14px] font-black text-axie-ink">Registry install</p>
         <p className="m-0 text-[13px] font-bold leading-5 text-axie-muted">
-          Use this instead when you want shadcn to copy editable source into your app. This does not install @axie/ui.
+          Use the direct URL when you want shadcn to copy editable source into your app. This works without the official registry and does not install <InlineCode>@axie/ui</InlineCode>.
         </p>
       </div>
       <PackageManagerCodeBlock
@@ -68,6 +68,9 @@ import { ${importName} } from "@axie/ui";`}</CodeBlock>
         <p className="m-0 text-[12px] font-black uppercase leading-none text-axie-muted">Copied source import</p>
         <CodeBlock>{`import "@/styles/axie.css";
 import { ${importName} } from "@/components/axie/${component.slug}";`}</CodeBlock>
+        <p className="m-0 text-[13px] font-bold leading-5 text-axie-muted">
+          Prefer <InlineCode>@axie/{component.slug}</InlineCode>? Add the Axie namespace once from the Installation page, then use that shorthand.
+        </p>
       </div>
     </div>
   );

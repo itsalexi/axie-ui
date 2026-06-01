@@ -82,21 +82,43 @@ import { Button, Field, Input } from "@axie/ui";`}</CodeBlock>
         <DocsSection
           description={
             <>
-              This does not install <InlineCode>@axie/ui</InlineCode>. shadcn downloads the registry item,
-              writes component files into your app, and installs only the external dependencies that component needs.
+              This does not install <InlineCode>@axie/ui</InlineCode>. shadcn can add Axie from a URL today,
+              even before Axie is listed in the official shadcn registry.
             </>
           }
           id="registry"
           title="Registry install"
         >
           <div className="grid w-full min-w-0 gap-4">
-            <CodeBlock>{`pnpm dlx shadcn@latest registry add @axie=https://axie.alexi.life/r/{name}.json
+            <div className="grid gap-2">
+              <p className="m-0 text-[14px] font-black text-axie-ink">Recommended: use the direct URL</p>
+              <p className="m-0 max-w-[72ch] text-[13px] font-bold leading-5 text-axie-muted">
+                Use this when you want to install one component without setting up a shorthand namespace.
+              </p>
+            </div>
+            <CodeBlock>{`pnpm dlx shadcn@latest add https://axie.alexi.life/r/button.json`}</CodeBlock>
+
+            <div className="grid min-w-0 gap-4 xl:grid-cols-[minmax(0,0.95fr)_minmax(0,1fr)]">
+              <div className="grid min-w-0 gap-3">
+                <div className="grid gap-2">
+                  <p className="m-0 text-[14px] font-black text-axie-ink">Optional: add the namespace once</p>
+                  <p className="m-0 text-[13px] font-bold leading-5 text-axie-muted">
+                    Do this only if you want shorthand commands like <InlineCode>@axie/button</InlineCode> in that project.
+                  </p>
+                </div>
+                <CodeBlock>{`pnpm dlx shadcn@latest registry add @axie=https://axie.alexi.life/r/{name}.json
 pnpm dlx shadcn@latest add @axie/button`}</CodeBlock>
-            <div className="grid min-w-0 gap-4 xl:grid-cols-2">
-              <CodeBlock>{`# Or install one component directly.
-pnpm dlx shadcn@latest add https://axie.alexi.life/r/button.json`}</CodeBlock>
-              <CodeBlock>{`import "@/styles/axie.css";
+              </div>
+              <div className="grid min-w-0 gap-3">
+                <div className="grid gap-2">
+                  <p className="m-0 text-[14px] font-black text-axie-ink">Import copied source</p>
+                  <p className="m-0 text-[13px] font-bold leading-5 text-axie-muted">
+                    Registry components are local files, so imports point at your app, not <InlineCode>@axie/ui</InlineCode>.
+                  </p>
+                </div>
+                <CodeBlock>{`import "@/styles/axie.css";
 import { Button } from "@/components/axie/button";`}</CodeBlock>
+              </div>
             </div>
           </div>
         </DocsSection>
