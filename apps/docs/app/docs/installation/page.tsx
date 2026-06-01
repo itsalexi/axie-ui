@@ -63,19 +63,24 @@ export default function InstallationPage() {
           description={
             <>
               This installs Axie as a dependency. Components stay in <InlineCode>node_modules</InlineCode> and
-              you import them from <InlineCode>@axie/ui</InlineCode>.
+              you import them from <InlineCode>@axie/ui</InlineCode>. Point Tailwind at the package output so
+              Axie utility classes are included.
             </>
           }
           id="package"
           title="Package install"
         >
-          <div className="grid w-full min-w-0 gap-4 xl:grid-cols-[minmax(0,0.74fr)_minmax(0,1fr)]">
+          <div className="grid w-full min-w-0 gap-4 xl:grid-cols-[minmax(0,0.72fr)_minmax(0,1fr)]">
             <CodeBlock>{`pnpm add @axie/ui
 npm install @axie/ui
 yarn add @axie/ui
 bun add @axie/ui`}</CodeBlock>
-            <CodeBlock>{`import "@axie/ui/styles.css";
-import { Button, Field, Input } from "@axie/ui";`}</CodeBlock>
+            <div className="grid min-w-0 gap-4">
+              <CodeBlock>{`@import "tailwindcss";
+@import "@axie/ui/styles.css";
+@source "../node_modules/@axie/ui/dist";`}</CodeBlock>
+              <CodeBlock>{`import { Button, Field, Input } from "@axie/ui";`}</CodeBlock>
+            </div>
           </div>
         </DocsSection>
 
@@ -126,7 +131,7 @@ import { Button } from "@/components/axie/button";`}</CodeBlock>
         <DocsSection
           description={
             <>
-              Either path needs Axie styles imported once near the app root. Package installs import from{" "}
+              Either path needs Axie styles in your global CSS. Package installs import from{" "}
               <InlineCode>@axie/ui</InlineCode>. Registry installs import the copied stylesheet.
             </>
           }
@@ -134,10 +139,13 @@ import { Button } from "@/components/axie/button";`}</CodeBlock>
           title="Styles"
         >
           <CodeBlock>{`/* Package install */
-import "@axie/ui/styles.css";
+@import "tailwindcss";
+@import "@axie/ui/styles.css";
+@source "../node_modules/@axie/ui/dist";
 
 /* Registry install */
-import "@/styles/axie.css";`}</CodeBlock>
+@import "tailwindcss";
+@import "@/styles/axie.css";`}</CodeBlock>
         </DocsSection>
       </article>
     </DocsShell>
