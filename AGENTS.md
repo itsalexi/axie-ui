@@ -38,7 +38,7 @@ import { Button, Field, Input } from "@axie/ui";
 Registry install after deploy:
 
 ```bash
-pnpm dlx shadcn@latest registry add @axie=https://your-domain.com/r/{name}.json
+pnpm dlx shadcn@latest registry add @axie=https://axie.alexi.life/r/{name}.json
 pnpm dlx shadcn@latest add @axie/button
 ```
 

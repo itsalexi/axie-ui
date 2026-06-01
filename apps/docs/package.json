@@ -9,7 +9,7 @@
     "prebuild": "pnpm --workspace-root registry:build",
     "build": "next build",
     "start": "next start -p 8091",
-    "typecheck": "tsc -p tsconfig.json --noEmit"
+    "typecheck": "next typegen && tsc -p tsconfig.json --noEmit"
   },
   "dependencies": {
     "@axie/registry": "workspace:*",

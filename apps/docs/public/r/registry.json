@@ -1,7 +1,7 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry.json",
   "name": "axie",
-  "homepage": "http://localhost:8091",
+  "homepage": "https://axie.alexi.life",
   "items": [
     {
       "name": "button",

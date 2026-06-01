@@ -40,16 +40,16 @@ import "@axie/ui/styles.css";
 After the docs app is deployed, the registry is available at:
 
 ```txt
-https://your-domain.com/r/registry.json
-https://your-domain.com/r/button.json
+https://axie.alexi.life/r/registry.json
+https://axie.alexi.life/r/button.json
 ```
 
 Consumers can use Axie as a shadcn namespace:
 
 ```bash
-pnpm dlx shadcn@latest registry add @axie=https://your-domain.com/r/{name}.json
+pnpm dlx shadcn@latest registry add @axie=https://axie.alexi.life/r/{name}.json
 pnpm dlx shadcn@latest add @axie/button
 ```
 
-The docs app also exposes `https://your-domain.com/llms.txt` so AI agents can discover install
+The docs app also exposes `https://axie.alexi.life/llms.txt` so AI agents can discover install
 commands, registry URLs, component links, and usage guidance.
