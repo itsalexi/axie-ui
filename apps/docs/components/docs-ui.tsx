@@ -17,6 +17,14 @@ export function CodeBlock({ children }: { children: string }) {
   );
 }
 
+export function InlineCode({ children }: { children: ReactNode }) {
+  return (
+    <code className="rounded-[7px] border border-axie-line bg-axie-surface-soft px-1.5 py-0.5 font-mono text-[0.88em] font-black text-axie-ink">
+      {children}
+    </code>
+  );
+}
+
 export function ComponentPreview({ code, preview }: { code: string; preview: ReactNode }) {
   return <PreviewTabs code={code} preview={preview} />;
 }
@@ -28,7 +36,7 @@ export function DocsSection({
   title
 }: {
   children: ReactNode;
-  description?: string;
+  description?: ReactNode;
   id: string;
   title: string;
 }) {

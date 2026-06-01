@@ -1,6 +1,6 @@
 import { Badge, Breadcrumb } from "@axie/ui";
 import { DocsShell } from "../../../components/docs-shell";
-import { CodeBlock, DocsSection } from "../../../components/docs-ui";
+import { CodeBlock, DocsSection, InlineCode } from "../../../components/docs-ui";
 
 export default function InstallationPage() {
   return (
@@ -41,7 +41,7 @@ export default function InstallationPage() {
             <div className="grid gap-3 border-b border-axie-line p-4 md:border-b-0 md:border-r">
               <Badge className="w-fit" tone="accent">Package</Badge>
               <h2 className="m-0 text-[20px] font-black leading-none text-axie-ink">
-                Install `@axie/ui`
+                Install <InlineCode>@axie/ui</InlineCode>
               </h2>
               <p className="m-0 text-[14px] font-bold leading-6 text-axie-muted">
                 Best when you want updates through npm and package imports from one stable API.
@@ -60,11 +60,16 @@ export default function InstallationPage() {
         </DocsSection>
 
         <DocsSection
-          description="This installs Axie as a dependency. Components stay in node_modules and you import them from @axie/ui."
+          description={
+            <>
+              This installs Axie as a dependency. Components stay in <InlineCode>node_modules</InlineCode> and
+              you import them from <InlineCode>@axie/ui</InlineCode>.
+            </>
+          }
           id="package"
           title="Package install"
         >
-          <div className="grid gap-4">
+          <div className="grid w-full min-w-0 gap-4 xl:grid-cols-[minmax(0,0.74fr)_minmax(0,1fr)]">
             <CodeBlock>{`pnpm add @axie/ui
 npm install @axie/ui
 yarn add @axie/ui
@@ -75,22 +80,34 @@ import { Button, Field, Input } from "@axie/ui";`}</CodeBlock>
         </DocsSection>
 
         <DocsSection
-          description="This does not install @axie/ui. shadcn downloads the registry item, writes the component files into your app, and installs only the external dependencies that component needs."
+          description={
+            <>
+              This does not install <InlineCode>@axie/ui</InlineCode>. shadcn downloads the registry item,
+              writes component files into your app, and installs only the external dependencies that component needs.
+            </>
+          }
           id="registry"
           title="Registry install"
         >
-          <div className="grid gap-4">
+          <div className="grid w-full min-w-0 gap-4">
             <CodeBlock>{`pnpm dlx shadcn@latest registry add @axie=https://axie.alexi.life/r/{name}.json
 pnpm dlx shadcn@latest add @axie/button`}</CodeBlock>
-            <CodeBlock>{`# Or install one component directly.
+            <div className="grid min-w-0 gap-4 xl:grid-cols-2">
+              <CodeBlock>{`# Or install one component directly.
 pnpm dlx shadcn@latest add https://axie.alexi.life/r/button.json`}</CodeBlock>
-            <CodeBlock>{`import "@/styles/axie.css";
+              <CodeBlock>{`import "@/styles/axie.css";
 import { Button } from "@/components/axie/button";`}</CodeBlock>
+            </div>
           </div>
         </DocsSection>
 
         <DocsSection
-          description="Either path needs Axie styles imported once near the app root. Package installs import from @axie/ui. Registry installs import the copied stylesheet."
+          description={
+            <>
+              Either path needs Axie styles imported once near the app root. Package installs import from{" "}
+              <InlineCode>@axie/ui</InlineCode>. Registry installs import the copied stylesheet.
+            </>
+          }
           id="styles"
           title="Styles"
         >

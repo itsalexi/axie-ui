@@ -36,7 +36,7 @@ export const CodeBlock = React.forwardRef<HTMLDivElement, CodeBlockProps>(
     return (
       <div
         className={cn(
-          "min-w-0 max-w-full overflow-hidden rounded-[10px] border border-axie-line bg-[#201c19] shadow-[0_14px_32px_color-mix(in_srgb,var(--axie-color-ink)_8%,transparent)]",
+          "w-full min-w-0 max-w-full overflow-hidden rounded-[10px] border border-axie-line bg-[#201c19] shadow-[0_14px_32px_color-mix(in_srgb,var(--axie-color-ink)_8%,transparent)]",
           className
         )}
         ref={ref}
