@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { ArrowRightIcon } from "@radix-ui/react-icons";
-import { Badge, Breadcrumb, Button } from "@axie/ui";
+import { Badge, Breadcrumb, Button } from "axie-ui";
 import { DocsShell } from "../../../components/docs-shell";
 import { DocsSection } from "../../../components/docs-ui";
 import { recipes } from "../../../content/recipes";

@@ -37,7 +37,7 @@ import {
   Textarea,
   Toast,
   Tooltip
-} from "@axie/ui";
+} from "axie-ui";
 import { ArrowRightIcon, InfoCircledIcon, PlusIcon } from "@radix-ui/react-icons";
 import {
   CommandMenuPreview,
@@ -64,7 +64,7 @@ const doc: ComponentDoc = {
     previewCode: `"use client";
 
 import { useState } from "react";
-import { BottomSheet, Button } from "@axie/ui";
+import { BottomSheet, Button } from "axie-ui";
 
 export function Example() {
   const [open, setOpen] = useState(false);
@@ -79,7 +79,7 @@ export function Example() {
   );
 }`,
     slug: "bottom-sheet",
-    usage: `import { BottomSheet } from "@axie/ui";
+    usage: `import { BottomSheet } from "axie-ui";
 
 export function Example() {
   return (

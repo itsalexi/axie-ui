@@ -7,7 +7,7 @@ import {
   TableHead,
   TableHeader,
   TableRow
-} from "@axie/ui";
+} from "axie-ui";
 import { highlightCode } from "./code-highlight";
 import { PreviewTabs } from "./preview-tabs";
 

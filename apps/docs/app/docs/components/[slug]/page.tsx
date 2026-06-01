@@ -1,6 +1,6 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import { Badge, Breadcrumb, Button } from "@axie/ui";
+import { Badge, Breadcrumb, Button } from "axie-ui";
 import { componentCatalog } from "@axie/registry";
 import { ArrowLeftIcon, ArrowRightIcon } from "@radix-ui/react-icons";
 import { DocsShell } from "../../../../components/docs-shell";

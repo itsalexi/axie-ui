@@ -37,7 +37,7 @@ import {
   Textarea,
   Toast,
   Tooltip
-} from "@axie/ui";
+} from "axie-ui";
 import { ArrowRightIcon, InfoCircledIcon, PlusIcon } from "@radix-ui/react-icons";
 import {
   CommandMenuPreview,
@@ -64,7 +64,7 @@ const doc: ComponentDoc = {
     previewCode: `"use client";
 
 import { useState } from "react";
-import { SegmentedControl } from "@axie/ui";
+import { SegmentedControl } from "axie-ui";
 
 export function Example() {
   const [value, setValue] = useState("daily");
@@ -84,7 +84,7 @@ export function Example() {
   );
 }`,
     slug: "segmented-control",
-    usage: `import { SegmentedControl } from "@axie/ui";
+    usage: `import { SegmentedControl } from "axie-ui";
 
 <SegmentedControl
   ariaLabel="Budget rhythm"

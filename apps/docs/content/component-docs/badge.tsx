@@ -37,7 +37,7 @@ import {
   Textarea,
   Toast,
   Tooltip
-} from "@axie/ui";
+} from "axie-ui";
 import { ArrowRightIcon, InfoCircledIcon, PlusIcon } from "@radix-ui/react-icons";
 import {
   CommandMenuPreview,
@@ -74,7 +74,7 @@ const doc: ComponentDoc = {
   <Badge tone="danger">Failed</Badge>
 </div>`,
     slug: "badge",
-    usage: `import { Badge } from "@axie/ui";
+    usage: `import { Badge } from "axie-ui";
 
 export function Example() {
   return <Badge tone="accent">Synced</Badge>;

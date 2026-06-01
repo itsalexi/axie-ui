@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { ArrowRightIcon, MagnifyingGlassIcon } from "@radix-ui/react-icons";
-import { Input } from "@axie/ui";
+import { Input } from "axie-ui";
 import { componentCatalog, componentCategories, type ComponentCategory } from "@axie/registry";
 import { useMemo, useState } from "react";
 import { MorphingPillGroup } from "./morphing-pill-group";

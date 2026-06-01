@@ -37,7 +37,7 @@ import {
   Textarea,
   Toast,
   Tooltip
-} from "@axie/ui";
+} from "axie-ui";
 import { ArrowRightIcon, InfoCircledIcon, PlusIcon } from "@radix-ui/react-icons";
 import {
   CommandMenuPreview,
@@ -78,7 +78,7 @@ const doc: ComponentDoc = {
     previewCode: `"use client";
 
 import { useState } from "react";
-import { InputOtp } from "@axie/ui";
+import { InputOtp } from "axie-ui";
 
 export function Example() {
   const [value, setValue] = useState("427");
@@ -86,7 +86,7 @@ export function Example() {
   return <InputOtp length={6} value={value} onValueChange={setValue} />;
 }`,
     slug: "input-otp",
-    usage: `import { InputOtp } from "@axie/ui";
+    usage: `import { InputOtp } from "axie-ui";
 
 export function Example() {
   return <InputOtp length={6} />;

@@ -37,7 +37,7 @@ import {
   Textarea,
   Toast,
   Tooltip
-} from "@axie/ui";
+} from "axie-ui";
 import { ArrowRightIcon, InfoCircledIcon, PlusIcon } from "@radix-ui/react-icons";
 import {
   CommandMenuPreview,
@@ -74,7 +74,7 @@ const doc: ComponentDoc = {
   <Switch description="Keep animation subtle on dense screens." label="Reduce motion" />
 </div>`,
     slug: "switch",
-    usage: `import { Switch } from "@axie/ui";
+    usage: `import { Switch } from "axie-ui";
 
 export function Example() {
   return <Switch label="Budget reset alerts" defaultChecked />;

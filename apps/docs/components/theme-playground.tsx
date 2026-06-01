@@ -2,7 +2,7 @@
 
 import type { CSSProperties } from "react";
 import { useLayoutEffect, useMemo, useRef, useState } from "react";
-import { Badge, Button, Field, Input, Progress, Slider, Stat, Switch } from "@axie/ui";
+import { Badge, Button, Field, Input, Progress, Slider, Stat, Switch } from "axie-ui";
 
 type ThemePreset = {
   colors: {

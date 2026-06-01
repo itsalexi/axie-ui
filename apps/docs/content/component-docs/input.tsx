@@ -37,7 +37,7 @@ import {
   Textarea,
   Toast,
   Tooltip
-} from "@axie/ui";
+} from "axie-ui";
 import { ArrowRightIcon, InfoCircledIcon, PlusIcon } from "@radix-ui/react-icons";
 import {
   CommandMenuPreview,
@@ -77,7 +77,7 @@ const doc: ComponentDoc = {
   <Input disabled placeholder="Disabled input" />
 </div>`,
     slug: "input",
-    usage: `import { Input } from "@axie/ui";
+    usage: `import { Input } from "axie-ui";
 
 export function Example() {
   return <Input placeholder="alexi@example.com" />;

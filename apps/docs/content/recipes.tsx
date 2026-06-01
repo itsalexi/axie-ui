@@ -22,7 +22,7 @@ import {
   TableHeader,
   TableRow,
   Textarea
-} from "@axie/ui";
+} from "axie-ui";
 import {
   ApprovalTimelineRecipePreview,
   DataToolbarRecipePreview,

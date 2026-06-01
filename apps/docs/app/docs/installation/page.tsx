@@ -1,4 +1,4 @@
-import { Badge, Breadcrumb } from "@axie/ui";
+import { Badge, Breadcrumb } from "axie-ui";
 import { DocsShell } from "../../../components/docs-shell";
 import { CodeBlock, DocsSection, InlineCode } from "../../../components/docs-ui";
 
@@ -41,7 +41,7 @@ export default function InstallationPage() {
             <div className="grid gap-3 border-b border-axie-line p-4 md:border-b-0 md:border-r">
               <Badge className="w-fit" tone="accent">Package</Badge>
               <h2 className="m-0 text-[20px] font-black leading-none text-axie-ink">
-                Install <InlineCode>@axie/ui</InlineCode>
+                Install <InlineCode>axie-ui</InlineCode>
               </h2>
               <p className="m-0 text-[14px] font-bold leading-6 text-axie-muted">
                 Best when you want updates through npm and package imports from one stable API.
@@ -63,7 +63,7 @@ export default function InstallationPage() {
           description={
             <>
               This installs Axie as a dependency. Components stay in <InlineCode>node_modules</InlineCode> and
-              you import them from <InlineCode>@axie/ui</InlineCode>. Point Tailwind at the package output so
+              you import them from <InlineCode>axie-ui</InlineCode>. Point Tailwind at the package output so
               Axie utility classes are included.
             </>
           }
@@ -71,15 +71,15 @@ export default function InstallationPage() {
           title="Package install"
         >
           <div className="grid w-full min-w-0 gap-4 xl:grid-cols-[minmax(0,0.72fr)_minmax(0,1fr)]">
-            <CodeBlock>{`pnpm add @axie/ui
-npm install @axie/ui
-yarn add @axie/ui
-bun add @axie/ui`}</CodeBlock>
+            <CodeBlock>{`pnpm add axie-ui
+npm install axie-ui
+yarn add axie-ui
+bun add axie-ui`}</CodeBlock>
             <div className="grid min-w-0 gap-4">
               <CodeBlock>{`@import "tailwindcss";
-@import "@axie/ui/styles.css";
-@source "../node_modules/@axie/ui/dist";`}</CodeBlock>
-              <CodeBlock>{`import { Button, Field, Input } from "@axie/ui";`}</CodeBlock>
+@import "axie-ui/styles.css";
+@source "../node_modules/axie-ui/dist";`}</CodeBlock>
+              <CodeBlock>{`import { Button, Field, Input } from "axie-ui";`}</CodeBlock>
             </div>
           </div>
         </DocsSection>
@@ -87,7 +87,7 @@ bun add @axie/ui`}</CodeBlock>
         <DocsSection
           description={
             <>
-              This does not install <InlineCode>@axie/ui</InlineCode>. shadcn can add Axie from a URL today,
+              This does not install <InlineCode>axie-ui</InlineCode>. shadcn can add Axie from a URL today,
               even before Axie is listed in the official shadcn registry.
             </>
           }
@@ -118,7 +118,7 @@ pnpm dlx shadcn@latest add @axie/button`}</CodeBlock>
                 <div className="grid gap-2">
                   <p className="m-0 text-[14px] font-black text-axie-ink">Import copied source</p>
                   <p className="m-0 text-[13px] font-bold leading-5 text-axie-muted">
-                    Registry components are local files, so imports point at your app, not <InlineCode>@axie/ui</InlineCode>.
+                    Registry components are local files, so imports point at your app, not <InlineCode>axie-ui</InlineCode>.
                   </p>
                 </div>
                 <CodeBlock>{`import "@/styles/axie.css";
@@ -132,7 +132,7 @@ import { Button } from "@/components/axie/button";`}</CodeBlock>
           description={
             <>
               Either path needs Axie styles in your global CSS. Package installs import from{" "}
-              <InlineCode>@axie/ui</InlineCode>. Registry installs import the copied stylesheet.
+              <InlineCode>axie-ui</InlineCode>. Registry installs import the copied stylesheet.
             </>
           }
           id="styles"
@@ -140,8 +140,8 @@ import { Button } from "@/components/axie/button";`}</CodeBlock>
         >
           <CodeBlock>{`/* Package install */
 @import "tailwindcss";
-@import "@axie/ui/styles.css";
-@source "../node_modules/@axie/ui/dist";
+@import "axie-ui/styles.css";
+@source "../node_modules/axie-ui/dist";
 
 /* Registry install */
 @import "tailwindcss";

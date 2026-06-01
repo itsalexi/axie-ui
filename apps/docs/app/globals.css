@@ -1,5 +1,5 @@
 @import "tailwindcss";
-@import "@axie/ui/styles.css";
+@import "axie-ui/styles.css";
 
 @source "../../../packages/ui/src";
 

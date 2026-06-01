@@ -1,8 +1,8 @@
 # Axie UI
 
-[Docs](https://axie.alexi.life) · [Registry](https://axie.alexi.life/r/registry.json) · [npm](https://www.npmjs.com/package/@axie/ui)
+[Docs](https://axie.alexi.life) · [Registry](https://axie.alexi.life/r/registry.json) · [npm](https://www.npmjs.com/package/axie-ui)
 
-Axie UI is a warm, tactile React component system for focused product apps. It ships as a normal package and as a shadcn-style registry, so teams can either import components from `@axie/ui` or copy the source into their app when they want full ownership.
+Axie UI is a warm, tactile React component system for focused product apps. It ships as a normal package and as a shadcn-style registry, so teams can either import components from `axie-ui` or copy the source into their app when they want full ownership.
 
 ## What is inside
 
@@ -16,17 +16,17 @@ Axie UI is a warm, tactile React component system for focused product apps. It s
 Use the package when you want stable imports and npm updates.
 
 ```bash
-pnpm add @axie/ui
+pnpm add axie-ui
 ```
 
 ```css
 @import "tailwindcss";
-@import "@axie/ui/styles.css";
-@source "../node_modules/@axie/ui/dist";
+@import "axie-ui/styles.css";
+@source "../node_modules/axie-ui/dist";
 ```
 
 ```tsx
-import { Button, Field, Input } from "@axie/ui";
+import { Button, Field, Input } from "axie-ui";
 ```
 
 Use the registry when you want the component source copied into your app.
@@ -50,7 +50,7 @@ Button, Input, Autocomplete, Input OTP, Field, Checkbox, Switch, Segmented Contr
 
 ```txt
 apps/docs          Next.js documentation site
-packages/ui        @axie/ui React package
+packages/ui        axie-ui React package
 packages/registry  component catalog shared by docs, search, and registry builds
 registry           generated shadcn registry source
 ```

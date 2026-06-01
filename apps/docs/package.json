@@ -13,7 +13,7 @@
   },
   "dependencies": {
     "@axie/registry": "workspace:*",
-    "@axie/ui": "workspace:*",
+    "axie-ui": "workspace:*",
     "@radix-ui/react-icons": "latest",
     "next": "latest",
     "react": "latest",

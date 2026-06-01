@@ -37,7 +37,7 @@ import {
   Textarea,
   Toast,
   Tooltip
-} from "@axie/ui";
+} from "axie-ui";
 import { ArrowRightIcon, InfoCircledIcon, PlusIcon } from "@radix-ui/react-icons";
 import {
   CommandMenuPreview,
@@ -70,7 +70,7 @@ const doc: ComponentDoc = {
   <div>Below</div>
 </div>`,
     slug: "separator",
-    usage: `import { Separator } from "@axie/ui";
+    usage: `import { Separator } from "axie-ui";
 
 export function Example() {
   return <Separator />;

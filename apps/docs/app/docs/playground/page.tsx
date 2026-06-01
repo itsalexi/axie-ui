@@ -1,4 +1,4 @@
-import { Badge, Breadcrumb } from "@axie/ui";
+import { Badge, Breadcrumb } from "axie-ui";
 import { DocsShell } from "../../../components/docs-shell";
 import { DocsSection } from "../../../components/docs-ui";
 import { ThemePlayground } from "../../../components/theme-playground";

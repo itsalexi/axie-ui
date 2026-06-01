@@ -23,7 +23,7 @@ const doc: ComponentDoc = {
   </Field>
 </div>`,
   slug: "slider",
-  usage: `import { Slider } from "@axie/ui";
+  usage: `import { Slider } from "axie-ui";
 
 export function Example() {
   return (

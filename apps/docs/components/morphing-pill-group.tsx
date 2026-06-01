@@ -2,7 +2,7 @@
 
 import type { CSSProperties } from "react";
 import { useLayoutEffect, useRef, useState } from "react";
-import { cn } from "@axie/ui";
+import { cn } from "axie-ui";
 
 export type MorphingPillItem<TValue extends string> = {
   label: string;

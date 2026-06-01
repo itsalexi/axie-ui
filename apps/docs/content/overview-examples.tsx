@@ -1,4 +1,4 @@
-import { Avatar, Badge, Pill, Progress, Skeleton, Toast } from "@axie/ui";
+import { Avatar, Badge, Pill, Progress, Skeleton, Toast } from "axie-ui";
 
 export const overviewExamples = (
   <div className="grid gap-4">

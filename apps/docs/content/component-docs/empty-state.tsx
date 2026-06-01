@@ -37,7 +37,7 @@ import {
   Textarea,
   Toast,
   Tooltip
-} from "@axie/ui";
+} from "axie-ui";
 import { ArrowRightIcon, InfoCircledIcon, PlusIcon } from "@radix-ui/react-icons";
 import {
   CommandMenuPreview,
@@ -76,7 +76,7 @@ const doc: ComponentDoc = {
   title="Nothing tracked yet"
 />`,
     slug: "empty-state",
-    usage: `import { EmptyState } from "@axie/ui";
+    usage: `import { EmptyState } from "axie-ui";
 
 export function Example() {
   return <EmptyState title="Nothing tracked yet" description="Add your first item." />;

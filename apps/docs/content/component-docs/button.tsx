@@ -37,7 +37,7 @@ import {
   Textarea,
   Toast,
   Tooltip
-} from "@axie/ui";
+} from "axie-ui";
 import { ArrowRightIcon, InfoCircledIcon, PlusIcon } from "@radix-ui/react-icons";
 import {
   CommandMenuPreview,
@@ -95,7 +95,7 @@ const doc: ComponentDoc = {
   <Button variant="danger">Delete</Button>
 </div>`,
     slug: "button",
-    usage: `import { Button } from "@axie/ui";
+    usage: `import { Button } from "axie-ui";
 
 export function Example() {
   return <Button>Save changes</Button>;

@@ -37,7 +37,7 @@ import {
   Textarea,
   Toast,
   Tooltip
-} from "@axie/ui";
+} from "axie-ui";
 import { ArrowRightIcon, InfoCircledIcon, PlusIcon } from "@radix-ui/react-icons";
 import {
   CommandMenuPreview,
@@ -71,7 +71,7 @@ const doc: ComponentDoc = {
   </Button>
 </Tooltip>`,
     slug: "tooltip",
-    usage: `import { Tooltip } from "@axie/ui";
+    usage: `import { Tooltip } from "axie-ui";
 
 export function Example() {
   return (

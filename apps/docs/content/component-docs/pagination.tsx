@@ -1,4 +1,4 @@
-import { Pagination, PaginationItem } from "@axie/ui";
+import { Pagination, PaginationItem } from "axie-ui";
 import { defaultInstall, type ComponentDoc } from "./types";
 
 const doc: ComponentDoc = {
@@ -27,7 +27,7 @@ const doc: ComponentDoc = {
   <PaginationItem>Next</PaginationItem>
 </Pagination>`,
   slug: "pagination",
-  usage: `import { Pagination, PaginationItem } from "@axie/ui";
+  usage: `import { Pagination, PaginationItem } from "axie-ui";
 
 export function Example() {
   return (

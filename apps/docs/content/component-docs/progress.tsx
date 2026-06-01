@@ -37,7 +37,7 @@ import {
   Textarea,
   Toast,
   Tooltip
-} from "@axie/ui";
+} from "axie-ui";
 import { ArrowRightIcon, InfoCircledIcon, PlusIcon } from "@radix-ui/react-icons";
 import {
   CommandMenuPreview,
@@ -72,7 +72,7 @@ const doc: ComponentDoc = {
   <Progress tone="danger" value={32} />
 </div>`,
     slug: "progress",
-    usage: `import { Progress } from "@axie/ui";
+    usage: `import { Progress } from "axie-ui";
 
 export function Example() {
   return <Progress value={68} />;

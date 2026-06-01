@@ -1,4 +1,4 @@
-import { axieTokens, Badge, Breadcrumb, Separator } from "@axie/ui";
+import { axieTokens, Badge, Breadcrumb, Separator } from "axie-ui";
 import { DocsShell } from "../../../components/docs-shell";
 import { CodeBlock, DocsSection } from "../../../components/docs-ui";
 

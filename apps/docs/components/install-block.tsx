@@ -10,10 +10,10 @@ import {
 } from "./package-manager-code-block";
 
 const packageCommands: PackageManagerCommands = {
-  bun: "bun add @axie/ui",
-  npm: "npm install @axie/ui",
-  pnpm: "pnpm add @axie/ui",
-  yarn: "yarn add @axie/ui"
+  bun: "bun add axie-ui",
+  npm: "npm install axie-ui",
+  pnpm: "pnpm add axie-ui",
+  yarn: "yarn add axie-ui"
 };
 
 function registryCommands(registryUrl: string): PackageManagerCommands {
@@ -35,7 +35,7 @@ export function InstallBlock({ component }: { component: ComponentCatalogItem })
       <div className="grid gap-1">
         <p className="m-0 text-[14px] font-black text-axie-ink">Package install</p>
         <p className="m-0 text-[13px] font-bold leading-5 text-axie-muted">
-          Install the package when you want components imported from @axie/ui.
+          Install the package when you want components imported from axie-ui.
         </p>
       </div>
       <PackageManagerCodeBlock
@@ -47,14 +47,14 @@ export function InstallBlock({ component }: { component: ComponentCatalogItem })
 
       <div className="grid gap-2">
         <p className="m-0 text-[12px] font-black uppercase leading-none text-axie-muted">Import</p>
-        <CodeBlock>{`import "@axie/ui/styles.css";
-import { ${importName} } from "@axie/ui";`}</CodeBlock>
+        <CodeBlock>{`import "axie-ui/styles.css";
+import { ${importName} } from "axie-ui";`}</CodeBlock>
       </div>
 
       <div className="grid gap-1 border-t border-axie-line pt-5">
         <p className="m-0 text-[14px] font-black text-axie-ink">Registry install</p>
         <p className="m-0 text-[13px] font-bold leading-5 text-axie-muted">
-          Use the direct URL when you want shadcn to copy editable source into your app. This works without the official registry and does not install <InlineCode>@axie/ui</InlineCode>.
+          Use the direct URL when you want shadcn to copy editable source into your app. This works without the official registry and does not install <InlineCode>axie-ui</InlineCode>.
         </p>
       </div>
       <PackageManagerCodeBlock

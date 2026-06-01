@@ -33,7 +33,7 @@ import {
   TableRow,
   Tabs,
   Textarea
-} from "@axie/ui";
+} from "axie-ui";
 import {
   BarChartIcon,
   CalendarIcon,

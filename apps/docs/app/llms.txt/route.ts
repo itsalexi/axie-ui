@@ -28,12 +28,12 @@ export function GET(request: Request) {
   return new Response(
     `# Axie UI
 
-> Axie UI is a warm, tactile React component system for focused product apps. It ships as the @axie/ui package and as a shadcn-compatible source registry.
+> Axie UI is a warm, tactile React component system for focused product apps. It ships as the axie-ui package and as a shadcn-compatible source registry.
 
 ## Use Axie UI
 
-- Package import: \`import { Button, Field, Input } from "@axie/ui";\`
-- Stylesheet import: \`import "@axie/ui/styles.css";\`
+- Package import: \`import { Button, Field, Input } from "axie-ui";\`
+- Stylesheet import: \`import "axie-ui/styles.css";\`
 - Registry catalog: ${siteUrl}/r/registry.json
 - Registry item URL pattern: ${siteUrl}/r/{name}.json
 - Namespace setup: \`pnpm dlx shadcn@latest registry add @axie=${siteUrl}/r/{name}.json\`
@@ -41,7 +41,7 @@ export function GET(request: Request) {
 
 ## Agent Guidance
 
-- Prefer package imports from \`@axie/ui\` when the package is installed.
+- Prefer package imports from \`axie-ui\` when the package is installed.
 - Use the shadcn registry when the project wants editable source copied into the app.
 - Import Axie styles exactly once near the app root.
 - Reuse Axie CSS variables instead of hardcoding new color systems.

@@ -8,7 +8,7 @@ import {
   ListRow,
   Progress,
   Stat
-} from "@axie/ui";
+} from "axie-ui";
 import { componentCount } from "@axie/registry";
 import {
   ArrowRightIcon,
@@ -111,10 +111,10 @@ export default function HomePage() {
           title="Quick start"
         >
           <div className="grid gap-5 lg:grid-cols-[minmax(0,0.9fr)_minmax(260px,0.5fr)] lg:items-start">
-            <CodeBlock>{`pnpm add @axie/ui
+            <CodeBlock>{`pnpm add axie-ui
 
-import "@axie/ui/styles.css";
-import { Button, Field, Input } from "@axie/ui";`}</CodeBlock>
+import "axie-ui/styles.css";
+import { Button, Field, Input } from "axie-ui";`}</CodeBlock>
             <div className="grid gap-3 border-y border-axie-line py-4">
               <SystemRule title="Tokens first" description="Colors, spacing, radius, and motion are CSS variables." />
               <SystemRule title="Copyable code" description="Every page keeps preview, usage, and API notes close together." />

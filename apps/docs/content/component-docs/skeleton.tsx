@@ -37,7 +37,7 @@ import {
   Textarea,
   Toast,
   Tooltip
-} from "@axie/ui";
+} from "axie-ui";
 import { ArrowRightIcon, InfoCircledIcon, PlusIcon } from "@radix-ui/react-icons";
 import {
   CommandMenuPreview,
@@ -70,7 +70,7 @@ const doc: ComponentDoc = {
   <Skeleton className="h-24 w-full rounded-axie-card" />
 </div>`,
     slug: "skeleton",
-    usage: `import { Skeleton } from "@axie/ui";
+    usage: `import { Skeleton } from "axie-ui";
 
 export function Example() {
   return <Skeleton className="h-12 w-full" />;

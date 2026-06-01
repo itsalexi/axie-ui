@@ -1,4 +1,4 @@
-import { Field, Select, type SelectOption } from "@axie/ui";
+import { Field, Select, type SelectOption } from "axie-ui";
 import { defaultInstall, type ComponentDoc } from "./types";
 
 const cadenceOptions: SelectOption[] = [
@@ -60,7 +60,7 @@ const doc: ComponentDoc = {
   />
 </Field>`,
   slug: "select",
-  usage: `import { Field, Select } from "@axie/ui";
+  usage: `import { Field, Select } from "axie-ui";
 
 export function Example() {
   return (

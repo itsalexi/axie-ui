@@ -1,7 +1,7 @@
-import { CodeBlock } from "@axie/ui";
+import { CodeBlock } from "axie-ui";
 import { defaultInstall, type ComponentDoc } from "./types";
 
-const exampleCode = `import { Button } from "@axie/ui";
+const exampleCode = `import { Button } from "axie-ui";
 
 export function Example() {
   return <Button>Save changes</Button>;
@@ -40,12 +40,12 @@ const doc: ComponentDoc = {
   examples: [
     {
       code: `<CodeBlock
-  code="pnpm add @axie/ui"
+  code="pnpm add axie-ui"
   controls={managerControls}
   label="install"
 />`,
       description: "Use the controls slot for package-manager tabs or related snippet actions.",
-      preview: <CodeBlock code="pnpm add @axie/ui" controls={managerControls} label="install" />,
+      preview: <CodeBlock code="pnpm add axie-ui" controls={managerControls} label="install" />,
       title: "With controls"
     }
   ],
@@ -53,19 +53,19 @@ const doc: ComponentDoc = {
   name: "Code Block",
   preview: <CodeBlock code={exampleCode} />,
   previewCode: `<CodeBlock
-  code={\`import { Button } from "@axie/ui";
+  code={\`import { Button } from "axie-ui";
 
 export function Example() {
   return <Button>Save changes</Button>;
 }\`}
 />`,
   slug: "code-block",
-  usage: `import { CodeBlock } from "@axie/ui";
+  usage: `import { CodeBlock } from "axie-ui";
 
 export function Example() {
   return (
     <CodeBlock
-      code={\`pnpm add @axie/ui\`}
+      code={\`pnpm add axie-ui\`}
       label="install"
     />
   );

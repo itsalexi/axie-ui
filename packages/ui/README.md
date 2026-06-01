@@ -1,4 +1,4 @@
-# @axie/ui
+# axie-ui
 
 [Docs](https://axie.alexi.life) · [Registry](https://axie.alexi.life/r/registry.json) · [Source](https://github.com/itsalexi/axie-ui)
 
@@ -7,33 +7,33 @@ Warm, tactile React components for focused product apps. Axie is built for dense
 ## Install
 
 ```bash
-pnpm add @axie/ui
+pnpm add axie-ui
 ```
 
 Other package managers:
 
 ```bash
-npm install @axie/ui
-yarn add @axie/ui
-bun add @axie/ui
+npm install axie-ui
+yarn add axie-ui
+bun add axie-ui
 ```
 
 Import the stylesheet once near your app root, then import components from the package.
 
 ```css
 @import "tailwindcss";
-@import "@axie/ui/styles.css";
-@source "../node_modules/@axie/ui/dist";
+@import "axie-ui/styles.css";
+@source "../node_modules/axie-ui/dist";
 ```
 
 ```tsx
-import { Button, Field, Input } from "@axie/ui";
+import { Button, Field, Input } from "axie-ui";
 ```
 
 ## Example
 
 ```tsx
-import { Button, Field, Input } from "@axie/ui";
+import { Button, Field, Input } from "axie-ui";
 
 export function SignInForm() {
   return (

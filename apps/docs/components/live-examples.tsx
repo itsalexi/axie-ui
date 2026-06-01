@@ -16,7 +16,7 @@ import {
   ToastProvider,
   Textarea,
   useToast
-} from "@axie/ui";
+} from "axie-ui";
 
 export function SegmentedPreview() {
   const [value, setValue] = useState("daily");
@@ -95,7 +95,7 @@ export function TabsPreview() {
         {
           content: (
             <div className="rounded-axie-card border border-axie-line bg-axie-surface-soft p-axie-md font-mono text-[13px] text-axie-muted">
-              pnpm add @axie/ui
+              pnpm add axie-ui
             </div>
           ),
           label: "Code",

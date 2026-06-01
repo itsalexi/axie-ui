@@ -1,4 +1,4 @@
-import { Stepper } from "@axie/ui";
+import { Stepper } from "axie-ui";
 import { defaultInstall, type ComponentDoc } from "./types";
 
 const doc: ComponentDoc = {
@@ -31,7 +31,7 @@ const doc: ComponentDoc = {
   ]}
 />`,
   slug: "stepper",
-  usage: `import { Stepper } from "@axie/ui";
+  usage: `import { Stepper } from "axie-ui";
 
 export function Example() {
   return <Stepper current="review" items={steps} />;

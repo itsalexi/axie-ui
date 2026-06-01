@@ -37,7 +37,7 @@ import {
   Textarea,
   Toast,
   Tooltip
-} from "@axie/ui";
+} from "axie-ui";
 import { ArrowRightIcon, InfoCircledIcon, PlusIcon } from "@radix-ui/react-icons";
 import {
   CommandMenuPreview,
@@ -65,11 +65,11 @@ const doc: ComponentDoc = {
   defaultValue="preview"
   items={[
     { label: "Preview", value: "preview", content: <div>Preview content</div> },
-    { label: "Code", value: "code", content: <div>pnpm add @axie/ui</div> }
+    { label: "Code", value: "code", content: <div>pnpm add axie-ui</div> }
   ]}
 />`,
     slug: "tabs",
-    usage: `import { Tabs } from "@axie/ui";
+    usage: `import { Tabs } from "axie-ui";
 
 export function Example() {
   return (

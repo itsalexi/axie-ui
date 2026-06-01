@@ -1,6 +1,6 @@
 "use client";
 
-import { CodeBlock } from "@axie/ui";
+import { CodeBlock } from "axie-ui";
 import { highlightCode } from "./code-highlight";
 import { MorphingPillGroup } from "./morphing-pill-group";
 

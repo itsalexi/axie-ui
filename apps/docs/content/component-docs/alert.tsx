@@ -37,7 +37,7 @@ import {
   Textarea,
   Toast,
   Tooltip
-} from "@axie/ui";
+} from "axie-ui";
 import { ArrowRightIcon, InfoCircledIcon, PlusIcon } from "@radix-ui/react-icons";
 import {
   CommandMenuPreview,
@@ -74,7 +74,7 @@ const doc: ComponentDoc = {
   <Alert description="This budget is already over its daily pace." title="Review spending" tone="warning" />
 </div>`,
     slug: "alert",
-    usage: `import { Alert } from "@axie/ui";
+    usage: `import { Alert } from "axie-ui";
 
 export function Example() {
   return <Alert title="Offline changes saved" description="Three entries will sync later." />;

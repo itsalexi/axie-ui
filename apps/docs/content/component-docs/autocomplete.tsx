@@ -1,4 +1,4 @@
-import { Autocomplete, Field, type AutocompleteOption } from "@axie/ui";
+import { Autocomplete, Field, type AutocompleteOption } from "axie-ui";
 import { defaultInstall, type ComponentDoc } from "./types";
 
 const peopleOptions: AutocompleteOption[] = [
@@ -67,7 +67,7 @@ const doc: ComponentDoc = {
   />
 </Field>`,
   slug: "autocomplete",
-  usage: `import { Autocomplete, Field } from "@axie/ui";
+  usage: `import { Autocomplete, Field } from "axie-ui";
 
 export function Example() {
   return (

@@ -19,4 +19,4 @@ export type ComponentDoc = {
   usage: string;
 };
 
-export const defaultInstall = "pnpm add @axie/ui";
+export const defaultInstall = "pnpm add axie-ui";

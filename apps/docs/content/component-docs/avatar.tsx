@@ -37,7 +37,7 @@ import {
   Textarea,
   Toast,
   Tooltip
-} from "@axie/ui";
+} from "axie-ui";
 import { ArrowRightIcon, InfoCircledIcon, PlusIcon } from "@radix-ui/react-icons";
 import {
   CommandMenuPreview,
@@ -73,7 +73,7 @@ const doc: ComponentDoc = {
   <Avatar fallback="Rio Tan" size="sm" status="offline" />
 </div>`,
     slug: "avatar",
-    usage: `import { Avatar } from "@axie/ui";
+    usage: `import { Avatar } from "axie-ui";
 
 export function Example() {
   return <Avatar fallback="Alexi" status="online" />;

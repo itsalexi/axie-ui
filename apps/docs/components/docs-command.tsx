@@ -3,7 +3,7 @@
 import { MagnifyingGlassIcon } from "@radix-ui/react-icons";
 import { useRouter } from "next/navigation";
 import { useEffect, useMemo, useState } from "react";
-import { CommandMenu, Kbd } from "@axie/ui";
+import { CommandMenu, Kbd } from "axie-ui";
 import { componentCatalog } from "@axie/registry";
 
 const baseItems = [

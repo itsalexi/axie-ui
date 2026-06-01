@@ -37,7 +37,7 @@ import {
   Textarea,
   Toast,
   Tooltip
-} from "@axie/ui";
+} from "axie-ui";
 import { ArrowRightIcon, InfoCircledIcon, PlusIcon } from "@radix-ui/react-icons";
 import {
   CommandMenuPreview,
@@ -64,7 +64,7 @@ const doc: ComponentDoc = {
     previewCode: `"use client";
 
 import { useState } from "react";
-import { Button, Dialog } from "@axie/ui";
+import { Button, Dialog } from "axie-ui";
 
 export function Example() {
   const [open, setOpen] = useState(false);
@@ -79,7 +79,7 @@ export function Example() {
   );
 }`,
     slug: "dialog",
-    usage: `import { Dialog } from "@axie/ui";
+    usage: `import { Dialog } from "axie-ui";
 
 export function Example() {
   return (

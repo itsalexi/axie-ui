@@ -37,7 +37,7 @@ import {
   Textarea,
   Toast,
   Tooltip
-} from "@axie/ui";
+} from "axie-ui";
 import { ArrowRightIcon, InfoCircledIcon, PlusIcon } from "@radix-ui/react-icons";
 import {
   CommandMenuPreview,
@@ -72,7 +72,7 @@ const doc: ComponentDoc = {
   <Stat label="Over" tone="danger" value="$18" />
 </div>`,
     slug: "stat",
-    usage: `import { Stat } from "@axie/ui";
+    usage: `import { Stat } from "axie-ui";
 
 export function Example() {
   return <Stat label="Pace" tone="accent" value="$64" />;

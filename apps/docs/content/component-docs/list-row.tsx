@@ -37,7 +37,7 @@ import {
   Textarea,
   Toast,
   Tooltip
-} from "@axie/ui";
+} from "axie-ui";
 import { ArrowRightIcon, InfoCircledIcon, PlusIcon } from "@radix-ui/react-icons";
 import {
   CommandMenuPreview,
@@ -72,7 +72,7 @@ const doc: ComponentDoc = {
   <ListRow action={<strong>$2,450</strong>} detail="Income" meta="May 30" title="Design invoice" tone="accent" />
 </div>`,
     slug: "list-row",
-    usage: `import { ListRow } from "@axie/ui";
+    usage: `import { ListRow } from "axie-ui";
 
 export function Example() {
   return <ListRow detail="Food" meta="Today" title="Lunch with Mara" tone="danger" />;

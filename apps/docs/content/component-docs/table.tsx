@@ -37,7 +37,7 @@ import {
   Textarea,
   Toast,
   Tooltip
-} from "@axie/ui";
+} from "axie-ui";
 import { ArrowRightIcon, InfoCircledIcon, PlusIcon } from "@radix-ui/react-icons";
 import {
   CommandMenuPreview,
@@ -100,7 +100,7 @@ const doc: ComponentDoc = {
   </TableBody>
 </Table>`,
     slug: "table",
-    usage: `import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@axie/ui";
+    usage: `import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "axie-ui";
 
 export function Example() {
   return (

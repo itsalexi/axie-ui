@@ -37,7 +37,7 @@ function ToastButton() {
   );
 }`,
   slug: "toast",
-  usage: `import { Button, ToastProvider, useToast } from "@axie/ui";
+  usage: `import { Button, ToastProvider, useToast } from "axie-ui";
 
 export function Example() {
   return (

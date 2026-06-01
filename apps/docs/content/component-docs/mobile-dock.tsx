@@ -1,4 +1,4 @@
-import { MobileDock, type MobileDockItem } from "@axie/ui";
+import { MobileDock, type MobileDockItem } from "axie-ui";
 import {
   ActivityLogIcon,
   BarChartIcon,
@@ -88,7 +88,7 @@ const doc: ComponentDoc = {
   ]}
 />`,
   slug: "mobile-dock",
-  usage: `import { MobileDock } from "@axie/ui";
+  usage: `import { MobileDock } from "axie-ui";
 import {
   ActivityLogIcon,
   BarChartIcon,

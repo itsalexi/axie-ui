@@ -1,4 +1,4 @@
-import { Button, Popover, Separator } from "@axie/ui";
+import { Button, Popover, Separator } from "axie-ui";
 import { defaultInstall, type ComponentDoc } from "./types";
 
 const doc: ComponentDoc = {
@@ -40,7 +40,7 @@ const doc: ComponentDoc = {
   <Button variant="outline">Open popover</Button>
 </Popover>`,
   slug: "popover",
-  usage: `import { Button, Popover } from "@axie/ui";
+  usage: `import { Button, Popover } from "axie-ui";
 
 export function Example() {
   return (

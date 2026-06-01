@@ -37,7 +37,7 @@ import {
   Textarea,
   Toast,
   Tooltip
-} from "@axie/ui";
+} from "axie-ui";
 import { ArrowRightIcon, InfoCircledIcon, PlusIcon } from "@radix-ui/react-icons";
 import {
   CommandMenuPreview,
@@ -64,7 +64,7 @@ const doc: ComponentDoc = {
     previewCode: `"use client";
 
 import { useState } from "react";
-import { RadioGroup } from "@axie/ui";
+import { RadioGroup } from "axie-ui";
 
 export function Example() {
   const [value, setValue] = useState("daily");
@@ -82,7 +82,7 @@ export function Example() {
   );
 }`,
     slug: "radio-group",
-    usage: `import { RadioGroup } from "@axie/ui";
+    usage: `import { RadioGroup } from "axie-ui";
 
 export function Example() {
   return (
