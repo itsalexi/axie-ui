@@ -44,7 +44,7 @@ pnpm dlx shadcn@latest add @axie/button
 
 ## Design Notes
 
-- Axie UI is warm, tactile, compact, and product-focused.
+- Axie UI is performative, tactile, compact, and product-focused.
 - Use rounded controls, firm borders, muted surfaces, and restrained accent colors.
 - Avoid decorative landing-page patterns in docs; make pages feel like real product surfaces.
 - Preserve accessible native behavior for form controls and keyboard navigation.

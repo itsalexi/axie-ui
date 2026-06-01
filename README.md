@@ -2,7 +2,7 @@
 
 [Docs](https://axie.alexi.life) · [Registry](https://axie.alexi.life/r/registry.json) · [npm](https://www.npmjs.com/package/axie-ui)
 
-Axie UI is a warm, tactile React component system for focused product apps. It ships as a normal package and as a shadcn-style registry, so teams can either import components from `axie-ui` or copy the source into their app when they want full ownership.
+Axie UI is the performative UI library for React product apps. It ships as a normal package and as a shadcn-style registry, so teams can either import components from `axie-ui` or copy the source into their app when they want full ownership.
 
 ## What is inside
 

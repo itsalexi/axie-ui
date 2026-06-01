@@ -70,8 +70,9 @@ export default function TokensPage() {
           title="CSS variables"
         >
           <CodeBlock>{`:root {
-  --axie-color-ink: #28231f;
-  --axie-color-paper: #f7f2ea;
+  --axie-color-ink: #263024;
+  --axie-color-paper: #f4f1e6;
+  --axie-color-accent: #6f7f3f;
   --axie-radius-card: 10px;
 }
 

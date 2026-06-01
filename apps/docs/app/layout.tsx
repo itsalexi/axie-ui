@@ -3,7 +3,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Axie UI",
-  description: "A warm, tactile React component system for focused apps."
+  description: "The performative UI library for React product apps."
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {

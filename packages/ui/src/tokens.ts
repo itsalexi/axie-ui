@@ -1,19 +1,19 @@
 export const axieTokens = {
   colors: {
-    ink: "#28231F",
-    paper: "#F7F2EA",
-    surface: "#FFFDF7",
-    surfaceSoft: "#EEE6D9",
-    muted: "#766D62",
-    line: "#DDD0BE",
-    accent: "#3F665C",
-    accentSoft: "#DDE9E3",
-    danger: "#A44F43",
-    dangerSoft: "#F0D8D2",
-    warning: "#967032",
-    warningSoft: "#EEDFC2",
-    info: "#4F6A7F",
-    infoSoft: "#DDE7ED"
+    ink: "#263024",
+    paper: "#F4F1E6",
+    surface: "#FFFDF4",
+    surfaceSoft: "#E8EAD6",
+    muted: "#68705D",
+    line: "#D7D2B9",
+    accent: "#6F7F3F",
+    accentSoft: "#E0E8C7",
+    danger: "#A45447",
+    dangerSoft: "#EFD8D0",
+    warning: "#947236",
+    warningSoft: "#ECDCB8",
+    info: "#4D6972",
+    infoSoft: "#DCE8E6"
   },
   radii: {
     card: "10px",

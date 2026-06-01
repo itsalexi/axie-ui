@@ -26,25 +26,25 @@ type ThemePreset = {
 };
 
 const themePresets = {
-  cedar: {
+  matcha: {
     colors: {
-      accent: "#3f665c",
-      accentSoft: "#dde9e3",
-      danger: "#a44f43",
-      dangerSoft: "#f0d8d2",
-      info: "#4f6a7f",
-      infoSoft: "#dde7ed",
-      ink: "#28231f",
-      line: "#ddd0be",
-      muted: "#766d62",
-      paper: "#f7f2ea",
-      surface: "#fffdf7",
-      surfaceSoft: "#eee6d9",
-      warning: "#967032",
-      warningSoft: "#eedfc2"
+      accent: "#6f7f3f",
+      accentSoft: "#e0e8c7",
+      danger: "#a45447",
+      dangerSoft: "#efd8d0",
+      info: "#4d6972",
+      infoSoft: "#dce8e6",
+      ink: "#263024",
+      line: "#d7d2b9",
+      muted: "#68705d",
+      paper: "#f4f1e6",
+      surface: "#fffdf4",
+      surfaceSoft: "#e8ead6",
+      warning: "#947236",
+      warningSoft: "#ecdcb8"
     },
-    description: "Warm paper. Cedar green.",
-    label: "Cedar"
+    description: "Matcha green. Warm paper.",
+    label: "Matcha"
   },
   slate: {
     colors: {
@@ -131,7 +131,7 @@ const themePresets = {
 type ThemeName = keyof typeof themePresets;
 
 export function ThemePlayground() {
-  const [themeName, setThemeName] = useState<ThemeName>("cedar");
+  const [themeName, setThemeName] = useState<ThemeName>("matcha");
   const [radius, setRadius] = useState("12");
   const [density, setDensity] = useState("14");
   const [motion, setMotion] = useState("260");

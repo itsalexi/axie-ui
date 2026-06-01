@@ -28,7 +28,7 @@ export function GET(request: Request) {
   return new Response(
     `# Axie UI
 
-> Axie UI is a warm, tactile React component system for focused product apps. It ships as the axie-ui package and as a shadcn-compatible source registry.
+> Axie UI is the performative UI library for React product apps. It ships as the axie-ui package and as a shadcn-compatible source registry.
 
 ## Use Axie UI
 

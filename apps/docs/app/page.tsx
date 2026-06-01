@@ -46,15 +46,15 @@ export default function HomePage() {
             />
             <div className="flex flex-wrap gap-2">
               <Badge tone="accent">Axie UI</Badge>
-              <Badge>React primitives</Badge>
+              <Badge>Performative primitives</Badge>
             </div>
             <div className="grid gap-4">
               <h1 className="m-0 max-w-[680px] text-[42px] font-black leading-[1.02] tracking-normal text-axie-ink md:text-[58px] md:leading-[0.98]">
-                Build calm product screens faster.
+                The performative UI library.
               </h1>
               <p className="m-0 max-w-[62ch] text-[16px] font-bold leading-7 text-axie-muted md:text-[17px]">
-                Axie UI is a tactile component system for forms, settings, dashboards, and internal
-                tools that need to feel personal without getting noisy.
+                Axie UI is a tactile React system for forms, settings, dashboards, and internal
+                tools that need movement, taste, and control without getting noisy.
               </p>
             </div>
             <div className="flex flex-wrap gap-2">

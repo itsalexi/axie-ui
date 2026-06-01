@@ -30,20 +30,20 @@
 }
 
 :root {
-  --axie-color-ink: #28231f;
-  --axie-color-paper: #f7f2ea;
-  --axie-color-surface: #fffdf7;
-  --axie-color-surface-soft: #eee6d9;
-  --axie-color-muted: #766d62;
-  --axie-color-line: #ddd0be;
-  --axie-color-accent: #3f665c;
-  --axie-color-accent-soft: #dde9e3;
-  --axie-color-danger: #a44f43;
-  --axie-color-danger-soft: #f0d8d2;
-  --axie-color-warning: #967032;
-  --axie-color-warning-soft: #eedfc2;
-  --axie-color-info: #4f6a7f;
-  --axie-color-info-soft: #dde7ed;
+  --axie-color-ink: #263024;
+  --axie-color-paper: #f4f1e6;
+  --axie-color-surface: #fffdf4;
+  --axie-color-surface-soft: #e8ead6;
+  --axie-color-muted: #68705d;
+  --axie-color-line: #d7d2b9;
+  --axie-color-accent: #6f7f3f;
+  --axie-color-accent-soft: #e0e8c7;
+  --axie-color-danger: #a45447;
+  --axie-color-danger-soft: #efd8d0;
+  --axie-color-warning: #947236;
+  --axie-color-warning-soft: #ecdcb8;
+  --axie-color-info: #4d6972;
+  --axie-color-info-soft: #dce8e6;
   --axie-radius-card: 10px;
   --axie-radius-control: 12px;
   --axie-radius-sheet: 30px;

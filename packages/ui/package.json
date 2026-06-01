@@ -1,7 +1,7 @@
 {
   "name": "axie-ui",
-  "version": "0.1.1",
-  "description": "A warm, tactile React component system for focused product apps.",
+  "version": "0.1.2",
+  "description": "The performative UI library for React product apps.",
   "type": "module",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",

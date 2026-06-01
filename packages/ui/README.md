@@ -2,7 +2,7 @@
 
 [Docs](https://axie.alexi.life) · [Registry](https://axie.alexi.life/r/registry.json) · [Source](https://github.com/itsalexi/axie-ui)
 
-Warm, tactile React components for focused product apps. Axie is built for dense interfaces that should still feel soft, animated, and personal.
+The performative UI library for React product apps. Axie is built for dense interfaces that should feel tactile, animated, and personal.
 
 ## Install
 
